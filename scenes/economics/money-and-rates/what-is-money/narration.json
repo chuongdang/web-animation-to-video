@@ -1,0 +1,10 @@
+{ "voice": "af_heart", "speed": 0.95, "lines": {
+  "m1": "Without money, people must barter: I trade my eggs for your shoes.",
+  "m2": "But it only works if you want my eggs, and I want your shoes. That rare match is called a double coincidence of wants.",
+  "m3": "Money fixes this. It is a medium of exchange: sell to anyone, buy from anyone.",
+  "m4": "It is a store of value: you can earn today, and spend months later.",
+  "m5": "And it is a unit of account: every price is quoted in the same measure, so we can compare eggs, shoes, and rent.",
+  "m6": "Modern money, like the dollar, is fiat money. It is not backed by gold. It works because the government says so, and because everyone trusts and accepts it.",
+  "m7": "If too much new money is created while goods stay the same, each unit buys less. Prices rise. That is inflation.",
+  "outro": "Money is trust, that we can all count on."
+} }

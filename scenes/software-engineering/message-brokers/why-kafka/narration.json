@@ -1,0 +1,10 @@
+{ "voice": "af_heart", "speed": 0.95, "lines": {
+  "k1": "Kafka is a distributed log: events are appended and kept, not removed when they are read.",
+  "k2": "Each consumer tracks its own offset, so many consumers can read the same events at their own pace.",
+  "k3": "A topic is split into partitions, so writes and reads spread across many machines.",
+  "k4": "Events with the same key always go to the same partition, so their order is kept.",
+  "k5": "Partitions are replicated across brokers, so the data survives a machine failure.",
+  "k6": "Because events are kept, you can replay history: rebuild a service, or feed a new consumer from the start.",
+  "k7": "Kafka is a great fit for event streaming, analytics pipelines, and event sourcing.",
+  "outro": "Append. Partition. Replay."
+} }

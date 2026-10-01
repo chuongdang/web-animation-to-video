@@ -1,0 +1,1 @@
+{ "title": "How the scheduler works", "summary": "How kube-scheduler picks a node for a pod: filtering, scoring, binding, and how to influence it.", "tags": ["kubernetes", "scheduler", "kube-scheduler", "pods"], "series": "Kubernetes internals", "order": 3 }

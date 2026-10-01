@@ -1,0 +1,9 @@
+{ "voice": "af_heart", "speed": 0.95, "lines": {
+  "d1": "It works on my machine, but breaks on the server, because the environment is different.",
+  "d2": "A Docker image packs the app together with its runtime, libraries and settings.",
+  "d3": "Run an image and you get a container: an isolated process with its own files and network.",
+  "d4": "Containers share the host kernel, so they start in milliseconds and are far lighter than virtual machines.",
+  "d5": "Images are built in layers, so unchanged layers are cached and shared between images.",
+  "d6": "Ship the same image to a laptop, a test server or the cloud, and it runs the same way everywhere.",
+  "outro": "Package. Isolate. Ship."
+} }

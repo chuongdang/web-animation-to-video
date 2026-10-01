@@ -1,0 +1,9 @@
+{ "voice": "af_heart", "speed": 0.95, "lines": {
+  "r1": "Kubernetes is built on control loops. A controller watches the current state and compares it to the desired state.",
+  "r2": "A Deployment asks for three replicas. The controller looks, and finds only two pods running.",
+  "r3": "So it creates one more pod. The loop never stops: observe, compare, act.",
+  "r4": "That is why Kubernetes is declarative. You state the goal, and controllers keep reality matching it, even after failures.",
+  "r5": "A Deployment manages a ReplicaSet, and the ReplicaSet manages the pods. Each layer has its own controller.",
+  "r6": "The kubelet runs a loop too: it makes sure the containers on its node match the pods assigned to it.",
+  "outro": "Observe. Compare. Act."
+} }

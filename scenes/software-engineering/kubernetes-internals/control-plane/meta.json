@@ -1,0 +1,1 @@
+{ "title": "Inside Kubernetes", "summary": "The control plane and the nodes: API server, etcd, scheduler, controllers and kubelet, and how a pod gets created.", "tags": ["kubernetes", "control-plane", "api-server", "etcd", "kubelet"], "series": "Kubernetes internals", "order": 1 }

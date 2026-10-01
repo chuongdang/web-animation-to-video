@@ -1,0 +1,9 @@
+{ "voice": "af_heart", "speed": 0.95, "lines": {
+  "d1": "Asking a disk-based database for the same data again and again is slow.",
+  "d2": "Redis keeps data in memory, so reads and writes are extremely fast.",
+  "d3": "As a cache: check Redis first. On a miss, load from the database and store the result.",
+  "d4": "A time to live expires old entries, so the cache does not serve stale data forever.",
+  "d5": "It is more than key and value: strings, lists, sets, sorted sets, and hashes.",
+  "d6": "That powers sessions, rate limits, queues, and leaderboards.",
+  "outro": "Keep hot data close."
+} }

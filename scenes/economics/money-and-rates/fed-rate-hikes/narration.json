@@ -1,0 +1,9 @@
+{ "voice": "af_heart", "speed": 0.95, "lines": {
+  "f1": "The US central bank, the Federal Reserve, sets the base interest rate for dollars. When it raises the rate, holding dollars pays more.",
+  "f2": "Global investors chase the best safe return. So money leaves other countries and flows into American bonds.",
+  "f3": "To buy those bonds they need dollars, so they sell other currencies. The dollar strengthens, and other currencies weaken.",
+  "f4": "For other countries this hurts. Imports like oil and food cost more, and debts owed in dollars become heavier to repay.",
+  "f5": "Their central banks often raise their own rates to stop money leaving. That slows their economies, loans get costly, and growth drops.",
+  "f6": "It reaches everywhere because the dollar is the world's main currency: oil, trade, loans, and reserves are mostly in dollars.",
+  "outro": "When America raises rates, the world feels it."
+} }

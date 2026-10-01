@@ -1,0 +1,1 @@
+{ "title": "Why Kafka?", "summary": "Kafka as a distributed log: offsets, partitions, keys, replication and replay.", "tags": ["kafka", "event-streaming", "log", "backend"], "series": "Message brokers", "order": 2 }

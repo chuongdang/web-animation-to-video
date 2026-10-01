@@ -1,0 +1,9 @@
+{ "voice": "af_heart", "speed": 0.95, "lines": {
+  "g1": "For thousands of years, gold was money: it is rare, it lasts, it can be divided, and nobody can simply print it.",
+  "g2": "Carrying gold was risky, so people stored it with goldsmiths and banks, who handed back paper receipts. Those receipts began to circulate as paper money.",
+  "g3": "Under the gold standard, every note could be exchanged for a fixed amount of gold. So the money supply was limited by the gold in the vaults.",
+  "g4": "It also fixed exchange rates, because every currency was a weight of gold. After the second world war, the dollar was tied to gold, and other currencies were tied to the dollar.",
+  "g5": "But economies grew faster than the gold supply, and governments could not create money in a crisis. In 1971, the United States stopped exchanging dollars for gold.",
+  "g6": "Today money is fiat, but gold has not disappeared. Central banks still hold it as a reserve, and investors buy it as a store of value when they fear inflation or crisis.",
+  "outro": "Gold stopped being money, but it never stopped being trusted."
+} }

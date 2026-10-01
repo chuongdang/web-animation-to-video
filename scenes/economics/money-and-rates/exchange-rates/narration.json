@@ -1,0 +1,9 @@
+{ "voice": "af_heart", "speed": 0.95, "lines": {
+  "e1": "An exchange rate is the price of one currency in another. If one dollar buys twenty five thousand dong, that is the rate.",
+  "e2": "We need it because each country's money works mostly at home. To buy from abroad, someone must swap currencies first.",
+  "e3": "Most rates are set by supply and demand in the foreign exchange market. When more people want a currency, its price goes up.",
+  "e4": "Demand comes from trade, tourism, investment, and above all, the interest rate a country pays.",
+  "e5": "When the dollar gets stronger, imports from America cost more in dong, but Vietnamese exports look cheaper to American buyers.",
+  "e6": "Some governments manage the rate. A central bank can buy or sell its reserves to keep the currency inside a target band.",
+  "outro": "An exchange rate is just a price."
+} }

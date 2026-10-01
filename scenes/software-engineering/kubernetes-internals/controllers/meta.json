@@ -1,0 +1,1 @@
+{ "title": "Controllers and reconciliation", "summary": "The control loop at the heart of Kubernetes: desired vs actual state, Deployments, ReplicaSets and the kubelet.", "tags": ["kubernetes", "controller", "reconciliation", "deployment", "replicaset"], "series": "Kubernetes internals", "order": 4 }

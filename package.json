@@ -18,7 +18,8 @@
     "preview": "node src/preview.js",
     "og": "node src/og-image.js",
     "site:serve": "node src/site-serve.js",
-    "deploy": "bash deploy/deploy.sh"
+    "deploy": "bash deploy/deploy.sh",
+    "test": "node tests/build.js && node --test \"tests/*.test.js\""
   },
   "dependencies": {
     "@fontsource/ibm-plex-mono": "^5.3.0",

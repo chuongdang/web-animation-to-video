@@ -1,0 +1,1 @@
+{ "title": "Why Node.js?", "summary": "Why a single thread with an event loop suits I/O-heavy servers, and where it breaks down.", "tags": ["nodejs", "javascript", "event-loop", "backend"], "series": "Backend runtimes", "order": 3 }

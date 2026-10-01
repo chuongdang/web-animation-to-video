@@ -1,0 +1,10 @@
+{ "voice": "af_heart", "speed": 0.95, "lines": {
+  "e1": "etcd is the database of Kubernetes: every object, from pods to secrets, is stored there.",
+  "e2": "It is a key-value store: each object lives under a key, built from its type, namespace and name.",
+  "e3": "Several etcd members form a cluster and elect a leader. Only the leader accepts writes.",
+  "e4": "A write is committed once a majority of members have it. This is the Raft algorithm.",
+  "e5": "That is why clusters run three or five members. With three, one can fail and the cluster still has a quorum.",
+  "e6": "Clients can watch a key, and etcd pushes every change. That is how the scheduler, controllers and kubelets react in real time.",
+  "e7": "Lose etcd without a backup, and you lose the cluster state. So take regular snapshots.",
+  "outro": "Store. Agree. Watch."
+} }

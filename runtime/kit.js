@@ -349,3 +349,10 @@ export function cycle(ctx, cx, cy, rx, ry, items, { alpha = 1, reveal = items.le
   });
   return pos;
 }
+
+/** small rounded "card" (a task, a request, a message) centred on (x, y) */
+export function card(ctx, x, y, color, alpha = 1, w = 150, h = 52) {
+  if (alpha <= 0) return;
+  ctx.save(); ctx.globalAlpha = alpha * 0.25; ctx.fillStyle = color; ctx.beginPath(); ctx.roundRect(x - w / 2, y - h / 2, w, h, 10); ctx.fill();
+  ctx.globalAlpha = alpha; ctx.strokeStyle = color; ctx.lineWidth = 3; ctx.stroke(); ctx.restore();
+}

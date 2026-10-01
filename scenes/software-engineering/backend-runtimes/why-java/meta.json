@@ -1,0 +1,1 @@
+{ "title": "Why Java?", "summary": "Bytecode and the JVM, the JIT compiler, garbage collection, and why Java suits large systems.", "tags": ["java", "jvm", "backend"], "series": "Backend runtimes", "order": 2 }

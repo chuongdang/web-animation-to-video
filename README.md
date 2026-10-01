@@ -93,7 +93,7 @@ npm run site:serve    # http://localhost:5180
 
 Language variants (`<name>.<lang>.mp4`) appear automatically: the page gets an EN/VI switcher, and a language only lists videos rendered in it. Translate the text with a `"vi": { "title": ..., "summary": ..., "tags": [...], "series": ... }` block in `meta.json` (and `title`/`blurb` in `field.json`).
 
-The hand-written site source is in `web/` (`app.js`, `style.css`, `brand/`, `index.html` template); `npm run site` builds it into `site/`, which is pure output (git-ignored). `site/` is a static site (open `site/index.html` directly, or upload the folder to any static host). Videos are grouped by
+The hand-written site source is in `web/` (`js/`, `style.css`, `brand/`, `index.html` template); `npm run site` builds it into `site/`, which is pure output (git-ignored). `site/` is a static site (open `site/index.html` directly, or upload the folder to any static host). Videos are grouped by
 subject, then by series. The text comes from `scenes/<field>/field.json` (subject title, blurb, colour) and
 `scenes/<field>/<sub>/<name>/meta.json` (title, summary, tags, series, order). The `<sub>` folder is the sub-category: selecting a subject
 on the site shows its sub-categories as filter chips (named by `series`). A scene without a rendered video is skipped, and
@@ -109,7 +109,7 @@ Absolute URLs need your site's public origin: copy `.env.example` to `.env` and 
 ## Layout
 
 ```
-web/                 site source: app.js, style.css, brand/, index.html template
+web/                 site source: js/ (ES modules), style.css, brand/, index.html template
 runtime/scene.js     scene API + live preview UI
 runtime/kit.js       shared palette, fonts, canvas helpers, narrated keyword captions
 src/render.js        Playwright -> ffmpeg renderer
@@ -133,6 +133,11 @@ fields / sub-categories so far
                        url-to-page (URL to full page: DNS, TLS, CDN, Go API)
   biology            energy-in-cells: respiration, photosynthesis
   software-engineering  scrum: why-scrum, empirical-process, why-sprints, roles-and-events, scrum-vs-kanban
+                     backend-runtimes: why-go, why-java, why-nodejs
+                     message-brokers: why-rabbitmq, why-kafka
+                     in-memory-stores: why-redis, redis-vs-valkey
+                     containers: why-docker, why-kubernetes
+                     kubernetes-internals: control-plane, etcd, scheduler, controllers
 ```
 
 New scene: `npm run new -- <field>/<sub>/<name> "Title"` copies the template (new fields and sub-categories are just new folders). Edit

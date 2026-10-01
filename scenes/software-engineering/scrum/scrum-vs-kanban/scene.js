@@ -1,4 +1,4 @@
-import { C, CX, CY, label, chapterTag, glowDot, narration, plan, speech, mount, chapterAlpha, titleCard, chip, token, panel, arrow, pathAt } from '/runtime/kit.js';
+import { C, CX, CY, label, chapterTag, glowDot, narration, plan, speech, mount, chapterAlpha, titleCard, chip, token, panel, arrow, pathAt, card } from '/runtime/kit.js';
 
 const { clamp, lerp, range, easeOut, easeInOut, fadeWindow } = Scene;
 
@@ -25,11 +25,6 @@ const P = plan(nar, { same: ['c1', 'c2'], cadence: ['k1', 'k2'], limits: ['l1', 
 const { CS, T } = P;
 const sp = speech(nar, CS);
 
-function card(ctx, x, y, color, alpha = 1, w = 150, h = 52) {
-  if (alpha <= 0) return;
-  ctx.save(); ctx.globalAlpha = alpha * 0.25; ctx.fillStyle = color; ctx.beginPath(); ctx.roundRect(x - w / 2, y - h / 2, w, h, 10); ctx.fill();
-  ctx.globalAlpha = alpha; ctx.strokeStyle = color; ctx.lineWidth = 3; ctx.stroke(); ctx.restore();
-}
 const mix = (a, b, k) => [lerp(a[0], b[0], k), lerp(a[1], b[1], k)];
 
 // ---- chapter 1: a shared board -------------------------------------------------------

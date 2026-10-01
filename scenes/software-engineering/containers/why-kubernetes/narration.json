@@ -1,0 +1,10 @@
+{ "voice": "af_heart", "speed": 0.95, "lines": {
+  "q1": "Running one container is easy. Running hundreds of them across many machines is not.",
+  "q2": "Kubernetes is a container orchestrator: you declare what you want, and it makes it happen.",
+  "q3": "It schedules containers onto nodes with free capacity, so you never pick machines by hand.",
+  "q4": "If a container, or a whole node, dies, Kubernetes heals itself: it starts replacements elsewhere.",
+  "q5": "Need more capacity? Change the replica count, or let it autoscale, and Kubernetes adds or removes pods.",
+  "q6": "Updates are rolling: new pods replace old ones gradually, with no downtime.",
+  "q7": "A service gives pods one stable address, and load balances traffic between them.",
+  "outro": "Declare. Schedule. Heal."
+} }

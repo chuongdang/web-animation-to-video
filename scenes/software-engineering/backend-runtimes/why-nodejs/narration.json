@@ -1,0 +1,9 @@
+{ "voice": "af_heart", "speed": 0.95, "lines": {
+  "n1": "Node.js runs JavaScript outside the browser, on Chrome's V8 engine.",
+  "n2": "Most servers spend their time waiting on databases, files and networks.",
+  "n3": "Instead of one thread per request, Node uses one thread and an event loop.",
+  "n4": "A slow operation is handed off. When it finishes, its callback is queued and run.",
+  "n5": "Thousands of connections stay cheap, but one heavy calculation blocks everyone.",
+  "n6": "So Node shines at I O heavy work, and uses worker threads for heavy CPU jobs.",
+  "outro": "Never block the loop."
+} }

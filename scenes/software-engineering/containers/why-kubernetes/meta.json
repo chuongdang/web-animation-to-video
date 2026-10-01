@@ -1,0 +1,1 @@
+{ "title": "Why Kubernetes?", "summary": "Why we orchestrate containers: declarative desired state, scheduling, self-healing, scaling, rolling updates and services.", "tags": ["kubernetes", "k8s", "containers", "orchestration", "devops"], "series": "Containers", "order": 2 }

@@ -1,0 +1,1 @@
+{ "title": "What does etcd do?", "summary": "etcd as the Kubernetes database: keys, leader election, Raft quorum, watches and backups.", "tags": ["etcd", "raft", "kubernetes", "key-value", "consensus"], "series": "Kubernetes internals", "order": 2 }

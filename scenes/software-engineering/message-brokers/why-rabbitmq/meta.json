@@ -1,0 +1,1 @@
+{ "title": "Why RabbitMQ?", "summary": "Why message brokers decouple services, and how exchanges, queues, acknowledgements and competing consumers work.", "tags": ["rabbitmq", "message-broker", "queue", "backend"], "series": "Message brokers", "order": 1 }

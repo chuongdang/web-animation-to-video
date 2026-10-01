@@ -1,0 +1,14 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "c1": "A Kubernetes cluster has a control plane that makes decisions, and worker nodes that run your containers.",
+    "c2": "Every request goes through the API server. It is the front door, and the only component that talks to the database.",
+    "c3": "The desired state is stored in etcd, a consistent key-value store.",
+    "c4": "The scheduler watches for pods with no node, and picks a node for each one.",
+    "c5": "Controllers compare the desired state with reality, and act to close the gap.",
+    "c6": "On each node, the kubelet sees the pods assigned to it, and asks the container runtime to start them.",
+    "c7": "Each node also runs kube-proxy. It sets up network rules, so traffic sent to a Service reaches one of the right pods.",
+    "outro": "Watch. Decide. Act."
+  }
+}

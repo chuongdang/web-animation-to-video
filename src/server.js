@@ -11,6 +11,9 @@ const MIME = {
   '.mjs': 'text/javascript; charset=utf-8',
   '.css': 'text/css; charset=utf-8',
   '.json': 'application/json',
+  '.xml': 'application/xml',
+  '.txt': 'text/plain; charset=utf-8',
+  '.md': 'text/markdown; charset=utf-8',
   '.svg': 'image/svg+xml',
   '.png': 'image/png',
   '.jpg': 'image/jpeg',
@@ -73,7 +76,7 @@ export function startServer(port = 0, root = ROOT) {
       res.writeHead(200, { 'content-type': MIME['.html'] });
       return res.end(indexPage());
     }
-    const file = path.join(root, decodeURIComponent(pathname === '/' ? '/index.html' : pathname));
+    const file = path.join(root, decodeURIComponent(pathname.endsWith('/') ? `${pathname}index.html` : pathname));
     if (!file.startsWith(root + path.sep)) {
       res.writeHead(403);
       return res.end('forbidden');

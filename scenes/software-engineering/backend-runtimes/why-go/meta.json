@@ -1,0 +1,1 @@
+{ "title": "Why Go?", "summary": "Why Go exists: single-binary deploys, goroutines scheduled onto a few threads, and channels.", "tags": ["go", "golang", "concurrency", "backend"], "series": "Backend runtimes", "order": 1 }

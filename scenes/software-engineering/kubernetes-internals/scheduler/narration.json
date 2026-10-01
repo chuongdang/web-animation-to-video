@@ -1,0 +1,8 @@
+{ "voice": "af_heart", "speed": 0.95, "lines": {
+  "s1": "When you create a pod, it has no node yet. The scheduler watches for these unassigned pods.",
+  "s2": "For each pod, it first filters out the nodes that cannot run it: not enough CPU or memory, or a taint the pod does not tolerate.",
+  "s3": "Then it scores the remaining nodes, preferring those with more free resources.",
+  "s4": "The pod goes to the highest score. The scheduler only writes the node name into the pod. The kubelet does the rest.",
+  "s5": "You can guide it with resource requests, node selectors, affinity rules, and taints and tolerations.",
+  "outro": "Filter. Score. Bind."
+} }

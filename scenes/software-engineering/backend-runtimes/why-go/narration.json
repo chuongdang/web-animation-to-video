@@ -1,0 +1,9 @@
+{ "voice": "af_heart", "speed": 0.95, "lines": {
+  "g1": "Go was built at Google for fast servers that handle many things at once.",
+  "g2": "It compiles to a single binary, so deploying means copying one file.",
+  "g3": "A goroutine is a function running on its own, and it costs only a few kilobytes.",
+  "g4": "The runtime schedules thousands of goroutines onto a few operating system threads.",
+  "g5": "Goroutines talk to each other through channels.",
+  "g6": "The Go proverb: do not communicate by sharing memory; share memory by communicating.",
+  "outro": "Simple. Fast. Concurrent."
+} }

@@ -1,0 +1,9 @@
+{ "voice": "af_heart", "speed": 0.95, "lines": {
+  "r1": "Services that call each other directly are tightly coupled: if one is down, the caller suffers.",
+  "r2": "A message broker sits in the middle, so producers and consumers do not need to be online together.",
+  "r3": "In RabbitMQ, a producer publishes to an exchange, which routes messages into queues using bindings.",
+  "r4": "Consumers take messages from a queue and send an acknowledgement. Unacknowledged messages are delivered again.",
+  "r5": "Several consumers on one queue share the work, which is how you scale out.",
+  "r6": "RabbitMQ is a great fit for background jobs, flexible routing, and request and reply.",
+  "outro": "Decouple the work. Deliver it reliably."
+} }

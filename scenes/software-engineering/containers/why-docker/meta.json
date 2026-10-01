@@ -1,0 +1,1 @@
+{ "title": "Why Docker?", "summary": "Images, containers, layers, and why containers are lighter than virtual machines.", "tags": ["docker", "containers", "images", "devops"], "series": "Containers", "order": 1 }

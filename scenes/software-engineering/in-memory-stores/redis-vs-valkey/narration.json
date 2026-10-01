@@ -1,0 +1,9 @@
+{ "voice": "af_heart", "speed": 0.95, "lines": {
+  "v1": "In 2024, Redis moved from a permissive open source license to source-available licenses.",
+  "v2": "In response, the Linux Foundation and the community forked the last open source version as Valkey.",
+  "v3": "Valkey stays compatible: the same protocol, the same commands, and the same client libraries.",
+  "v4": "So moving between them is usually just a change of address.",
+  "v5": "Valkey is developed in the open, with backing from major cloud providers.",
+  "v6": "Choose by your license needs, your cloud's managed offering, and the features you rely on.",
+  "outro": "Same protocol. Different governance."
+} }

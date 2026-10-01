@@ -1,0 +1,9 @@
+{ "voice": "af_heart", "speed": 0.95, "lines": {
+  "j1": "Java was created so one program could run on any machine: write once, run anywhere.",
+  "j2": "The compiler turns source code into bytecode, not machine code for one chip.",
+  "j3": "Each platform has its own Java Virtual Machine that runs the same bytecode.",
+  "j4": "The JIT compiler finds code that runs often, and turns those hot spots into fast machine code.",
+  "j5": "The garbage collector frees memory you no longer use, so you do not free it by hand.",
+  "j6": "Strong typing, a huge ecosystem and mature tooling make Java a safe choice for large systems.",
+  "outro": "Write once. Run anywhere."
+} }
