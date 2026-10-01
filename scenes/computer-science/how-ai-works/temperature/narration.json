@@ -1,0 +1,13 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "sm1": "A language model does not pick one word. It scores every possible next word, and turns the scores into probabilities.",
+    "sm2": "Then it samples: a random draw, weighted by those probabilities.",
+    "tp1": "Temperature reshapes the probabilities. A low temperature sharpens them, so the top word almost always wins.",
+    "tp2": "A high temperature flattens them, so unlikely words get a real chance.",
+    "ef1": "Run the same prompt several times. At low temperature, the answers are nearly identical.",
+    "ef2": "At high temperature they vary a lot, more creative, but also more likely to wander off.",
+    "outro": "Low temperature for facts and code. Higher temperature for brainstorming and stories. It is one dial, between reliable and creative."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "o1": "A model tries to fit a curve through the training points.",
+    "o2": "Too simple, and it underfits. Too flexible, and it overfits, chasing every wiggle of noise.",
+    "o3": "The real test is new data that the model has not seen.",
+    "o4": "The overfit curve is perfect on the training set, but fails on the test data.",
+    "o5": "As complexity grows, training error keeps falling, but test error turns upward.",
+    "o6": "Fixes include more data, simpler models, regularisation, and early stopping.",
+    "outro": "Learn the pattern, not the noise."
+  }
+}

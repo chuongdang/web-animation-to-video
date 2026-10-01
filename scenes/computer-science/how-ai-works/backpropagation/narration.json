@@ -1,0 +1,14 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "ls1": "The model's error is summed up in one number, the loss. Learning means making it smaller.",
+    "ls2": "Picture the loss as a landscape over the weights. Low ground means a better model.",
+    "gd1": "At any point, the gradient is the slope. It points uphill, so we step the opposite way.",
+    "gd2": "The step size is the learning rate. Too small is slow, and too large overshoots.",
+    "bp1": "A forward pass makes a prediction. Comparing it with the answer gives the error.",
+    "bp2": "Backpropagation sends the error backwards, finding each weight's share of the blame.",
+    "bp3": "Every weight then takes a small step downhill. Repeat, millions of times.",
+    "outro": "Predict, measure the error, send it backwards, and step downhill. Repeat that, and a network learns."
+  }
+}

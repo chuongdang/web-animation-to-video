@@ -1,0 +1,14 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "sx1": "Simplex mode sends data in one direction only, from the sender to the receiver.",
+    "sx2": "For example, a computer sending a document to a printer.",
+    "hd1": "Half duplex sends data in both directions, but not at the same time.",
+    "hd2": "For example, a walkie talkie: you speak, then you listen.",
+    "fd1": "Full duplex sends data in both directions at the same time.",
+    "fd2": "For example, a broadband internet connection.",
+    "cm1": "So: one direction only, both directions taking turns, or both directions at once.",
+    "outro": "Simplex, half duplex, full duplex. It is all about direction, and timing."
+  }
+}

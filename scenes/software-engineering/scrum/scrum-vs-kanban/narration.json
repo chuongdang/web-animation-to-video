@@ -1,0 +1,18 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "c1": "Scrum and Kanban both make work visible on a board.",
+    "c2": "Both aim for steady delivery and constant improvement.",
+    "k1": "Scrum works in fixed-length sprints, committing to a goal up front.",
+    "k2": "Kanban is a continuous flow: new work is pulled in when there is capacity.",
+    "l1": "Scrum limits work by time. Kanban limits it with a work-in-progress limit.",
+    "l2": "Scrum protects the sprint from change. Kanban welcomes change at any time.",
+    "m1": "Scrum prescribes roles and events. Kanban prescribes none.",
+    "m2": "Scrum tracks velocity. Kanban tracks cycle time.",
+    "w1": "Choose Scrum for product work that benefits from a steady rhythm.",
+    "w2": "Choose Kanban when work arrives unpredictably, like support or operations.",
+    "w3": "Many teams blend both, often called Scrumban.",
+    "outro": "Pick the rhythm that fits the work."
+  }
+}

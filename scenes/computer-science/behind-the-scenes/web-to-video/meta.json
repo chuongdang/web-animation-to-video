@@ -1,0 +1,11 @@
+{
+  "title": "How are web animations turned into videos?",
+  "summary": "A scene is a function of time: Chromium captures it frame by frame, ffmpeg encodes the video and mixes in the narration.",
+  "tags": [
+    "ffmpeg",
+    "Chromium",
+    "rendering"
+  ],
+  "series": "Behind the scenes",
+  "order": 1
+}

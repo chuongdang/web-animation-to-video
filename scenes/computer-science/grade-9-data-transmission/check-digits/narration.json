@@ -1,0 +1,14 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "cd1": "A check digit is the final digit of a code. It is calculated from all the other digits.",
+    "cd2": "It is used on barcodes, book numbers, vehicle identification numbers, and credit cards.",
+    "me1": "The method: multiply each digit by its position, add the totals, and divide by ten. The remainder is the check digit.",
+    "we1": "Take the code nine four five three four four. Multiply and add: nine, eight, fifteen, twelve, twenty. The total is sixty four.",
+    "we2": "Sixty four divided by ten leaves a remainder of four. That matches the last digit, so the code is accepted.",
+    "pr1": "Now try three five two one three two. Multiply and add: three, ten, six, four, fifteen. The total is thirty eight, and the remainder is eight.",
+    "pr2": "The last digit is two, not eight, so the code is rejected.",
+    "outro": "Multiply by position, add, divide by ten. Compare the remainder with the check digit."
+  }
+}

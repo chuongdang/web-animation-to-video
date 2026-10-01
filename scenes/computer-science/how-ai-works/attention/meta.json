@@ -1,0 +1,10 @@
+{
+  "title": "How does AI read a sentence?",
+  "summary": "Tokens, embeddings and attention, stacked in layers to score the next token.",
+  "tags": [
+    "transformers",
+    "attention"
+  ],
+  "series": "How AI works",
+  "order": 2
+}

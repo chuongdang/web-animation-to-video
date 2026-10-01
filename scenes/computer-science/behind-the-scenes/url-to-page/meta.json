@@ -1,0 +1,12 @@
+{
+  "title": "From typing a URL to seeing the page",
+  "summary": "DNS, TCP and TLS, a static frontend served from a CDN, one call to a Go API, and the final render.",
+  "tags": [
+    "DNS",
+    "HTTP",
+    "CDN",
+    "Go"
+  ],
+  "series": "Behind the scenes",
+  "order": 3
+}

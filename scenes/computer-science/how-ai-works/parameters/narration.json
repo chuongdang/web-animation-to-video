@@ -1,0 +1,13 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "par1": "A parameter is one adjustable number, a knob the model can turn.",
+    "par2": "A large model has billions of them, all set by training.",
+    "sc1": "A million seconds is about twelve days. A billion seconds is about thirty two years.",
+    "sc2": "Seventy billion seconds is over two thousand years. That is how many knobs there are to set.",
+    "mem1": "Each parameter takes two bytes, so seventy billion is one hundred forty gigabytes.",
+    "mem2": "Too big for one laptop, so large models run on racks of specialised G P Us.",
+    "outro": "More parameters means more room for patterns, but good data and training matter too. Billions of knobs, tuned by learning."
+  }
+}

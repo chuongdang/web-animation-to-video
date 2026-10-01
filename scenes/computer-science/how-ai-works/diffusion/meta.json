@@ -1,0 +1,10 @@
+{
+  "title": "How does AI draw pictures?",
+  "summary": "Diffusion models add noise to learn, then remove it to create, steered by a prompt.",
+  "tags": [
+    "images",
+    "generative"
+  ],
+  "series": "How AI works",
+  "order": 7
+}

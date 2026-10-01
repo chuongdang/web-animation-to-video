@@ -1,0 +1,13 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "t1": "A sprint is a fixed timebox of one month or less.",
+    "t2": "Each sprint ends with a usable increment of the product.",
+    "f1": "Short cycles bring feedback in weeks, not months.",
+    "f2": "Small batches mean smaller mistakes and less risk.",
+    "g1": "During a sprint the goal stays fixed, so the team can focus without constant change.",
+    "g2": "New ideas are not lost. They wait in the backlog for a later sprint.",
+    "outro": "Short cycles. Fast learning."
+  }
+}

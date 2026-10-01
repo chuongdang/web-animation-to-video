@@ -1,0 +1,10 @@
+{
+  "title": "Parity checks",
+  "summary": "Parity bits and parity blocks, including finding and fixing a flipped bit.",
+  "tags": [
+    "parity",
+    "errors"
+  ],
+  "series": "Grade 9 \u00b7 Unit 2: Data transmission",
+  "order": 5
+}

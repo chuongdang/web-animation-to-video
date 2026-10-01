@@ -1,0 +1,10 @@
+{
+  "title": "How is a chatbot trained?",
+  "summary": "Pretraining, fine-tuning and human feedback turn a text predictor into an assistant.",
+  "tags": [
+    "LLM",
+    "RLHF"
+  ],
+  "series": "How AI works",
+  "order": 5
+}

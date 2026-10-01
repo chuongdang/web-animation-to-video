@@ -1,0 +1,10 @@
+{
+  "title": "How do networks learn from errors?",
+  "summary": "Loss as a landscape, gradient descent and backpropagation.",
+  "tags": [
+    "training",
+    "gradients"
+  ],
+  "series": "How AI works",
+  "order": 4
+}

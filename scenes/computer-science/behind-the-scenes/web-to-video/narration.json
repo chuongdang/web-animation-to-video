@@ -1,0 +1,17 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "fn1": "A scene is a pure function of time. Give it a moment, and it draws exactly that picture.",
+    "fn2": "Canvas, S V G, or C S S, it does not matter. Nothing depends on a real clock.",
+    "br1": "The renderer opens the page in headless Chromium, and waits until fonts and assets are ready.",
+    "br2": "Then, for every frame, it calls set time, and takes a screenshot.",
+    "ff1": "Several browser pages render in parallel, and the frames are put back in order.",
+    "ff2": "They are piped into F F M peg, which encodes them as an H dot two six four video.",
+    "au1": "The narration is made separately: text becomes speech, one audio clip for each line.",
+    "au2": "Each clip's duration is saved, and the scene uses it to time its captions.",
+    "mx1": "F F M peg delays every clip to its start time, and mixes them into a single audio track.",
+    "mx2": "Video and audio are then combined into one M P 4 file, ready for the website.",
+    "outro": "A function of time, sampled frame by frame, mixed with narration. That is how a web animation becomes a video with sound."
+  }
+}

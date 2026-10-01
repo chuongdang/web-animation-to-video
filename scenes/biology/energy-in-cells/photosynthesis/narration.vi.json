@@ -1,0 +1,16 @@
+{
+  "engine": "edge",
+  "voice": "vi-VN-HoaiMyNeural",
+  "speed": 0.95,
+  "lines": {
+    "an1": "Chiếc lá có nhiều lớp. Lớp cutin phủ sáp và lớp biểu bì bảo vệ lá từ phía trên.",
+    "an2": "Bên dưới, các tế bào mô giậu chứa đầy lục lạp hấp thụ ánh sáng, và các khí khổng cho khí ra vào.",
+    "an3": "Các gân lá dẫn nước đi lên trong mạch gỗ, và dẫn đường đi khỏi lá trong mạch rây.",
+    "lr1": "Bên trong lục lạp, diệp lục hấp thụ ánh sáng và tách nước, giải phóng oxi.",
+    "lr2": "Năng lượng đó được lưu trữ dưới dạng a tê pê và en a đê pê hát cho giai đoạn tiếp theo.",
+    "ca1": "Trong chu trình Calvin, khí cacbonic được cố định và tổng hợp nhờ năng lượng đó.",
+    "ca2": "Kết quả là glucose, một loại đường mà cây dùng để lấy năng lượng và phát triển.",
+    "sum1": "Tổng cộng, ánh sáng, nước và khí cacbonic trở thành glucose và oxi.",
+    "outro": "Quang hợp lưu trữ năng lượng ánh sáng dưới dạng đường, còn hô hấp lại giải phóng nó. Cùng nhau, chúng duy trì sự sống."
+  }
+}

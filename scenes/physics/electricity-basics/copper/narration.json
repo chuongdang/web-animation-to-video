@@ -1,0 +1,14 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "cu1": "A copper atom has twenty nine electrons, but only one sits in its outer shell.",
+    "cu2": "That lone electron is weakly bound, so it is easy to pull free.",
+    "sea1": "In solid copper, every atom shares its electron, forming a sea of free electrons.",
+    "sea2": "That is about one free electron per atom: a huge number of charge carriers.",
+    "comp1": "In rubber, electrons stay bound to their atoms, so nothing flows.",
+    "comp2": "In copper, electrons drift through a tidy lattice, with few collisions.",
+    "rank1": "Only silver beats it, but copper is cheaper, and easy to draw into wire.",
+    "outro": "Lots of free electrons, and an orderly lattice to flow through. That is why copper is a great conductor."
+  }
+}

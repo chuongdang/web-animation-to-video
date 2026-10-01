@@ -1,0 +1,13 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "nd1": "When data is transmitted, it can be corrupted, lost, or even gained.",
+    "nd2": "Causes include interference, problems during packet switching, and skewing of data.",
+    "ck1": "A checksum is calculated from a block of data, and sent at the end. The receiver recalculates it, and compares.",
+    "ec1": "With an echo check, the data is sent back to the sender, who compares the two copies.",
+    "ar1": "With A R Q, the receiver sends an acknowledgement when the data arrives correctly, and then the sender sends the next block.",
+    "ar2": "If no acknowledgement arrives before the timeout, or a negative acknowledgement arrives, the block is sent again.",
+    "outro": "Checksums, echo checks, and A R Q. Different ways to catch errors, and fix them."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "engine": "edge",
+  "voice": "vi-VN-HoaiMyNeural",
+  "speed": 0.95,
+  "lines": {
+    "ov1": "Tế bào đốt cháy glucose cùng với oxi để giải phóng năng lượng, và lưu trữ nó dưới dạng a tê pê.",
+    "gly1": "Trong tế bào chất, quá trình đường phân tách glucose thành hai phân tử pyruvate.",
+    "gly2": "Nó thu về hai a tê pê, và không cần oxi.",
+    "kr1": "Bên trong ti thể, pyruvate bị phân giải bởi chu trình Krebs.",
+    "kr2": "Cacbon thoát ra dưới dạng khí cacbonic, và các chất mang nhận các electron năng lượng cao.",
+    "et1": "Các electron đi dọc theo chuỗi truyền electron, bơm proton qua một lớp màng.",
+    "et2": "Proton chảy ngược qua enzym a tê pê synthase, tạo ra phần lớn a tê pê, trong khi oxi nhận các electron và tạo thành nước.",
+    "tal1": "Một phân tử glucose cho khoảng ba mươi a tê pê, nhiều hơn khoảng mười lăm lần so với khi không có oxi.",
+    "outro": "Glucose và oxi đi vào. Khí cacbonic, nước và năng lượng đi ra. Đó là quá trình hô hấp tế bào."
+  }
+}

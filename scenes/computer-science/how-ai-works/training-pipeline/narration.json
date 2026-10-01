@@ -1,0 +1,13 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "pt1": "First, pretraining. The model reads a huge amount of text, and learns to predict the next word.",
+    "pt2": "The result is a base model. It is great at continuing text, but it is not yet a helpful assistant.",
+    "ft1": "Next, fine tuning on example conversations teaches it to follow instructions.",
+    "ft2": "Now the same question gets a direct answer.",
+    "rl1": "Then comes human feedback. People compare pairs of answers, and a reward model learns their preferences.",
+    "rl2": "The model is nudged toward answers people rate higher. This is called reinforcement learning from human feedback.",
+    "outro": "Pretraining teaches language, fine tuning teaches the format, and feedback teaches what people prefer. Together, they turn a text predictor into an assistant."
+  }
+}

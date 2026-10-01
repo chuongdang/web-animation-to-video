@@ -1,0 +1,13 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "atom1": "Everything is made of atoms: a positive nucleus, and tiny negative electrons.",
+    "atom2": "The outermost electrons are only loosely held.",
+    "metal1": "In a metal, outer electrons break free, and wander in every direction.",
+    "metal2": "But random wandering means no net flow, so no electricity yet.",
+    "circuit1": "A battery pushes the electrons the same way. That steady flow is a current.",
+    "circuit2": "Voltage is the push. Current is the flow. And resistance is what slows it down.",
+    "outro": "Electricity is the flow of electric charge."
+  }
+}

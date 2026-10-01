@@ -1,0 +1,14 @@
+{
+  "engine": "edge",
+  "voice": "vi-VN-HoaiMyNeural",
+  "speed": 0.95,
+  "lines": {
+    "atom1": "Mọi vật đều được tạo nên từ nguyên tử: một hạt nhân mang điện dương, và các electron nhỏ bé mang điện âm.",
+    "atom2": "Các electron ngoài cùng chỉ bị giữ rất lỏng lẻo.",
+    "metal1": "Trong kim loại, các electron ngoài cùng thoát ra tự do, và chạy lung tung theo mọi hướng.",
+    "metal2": "Chạy hỗn loạn nghĩa là không có dòng chảy chung, nên chưa có điện.",
+    "circuit1": "Một cục pin đẩy các electron cùng về một hướng. Dòng chảy ổn định đó chính là dòng điện.",
+    "circuit2": "Hiệu điện thế là lực đẩy. Dòng điện là dòng chảy. Và điện trở làm dòng chảy chậm lại.",
+    "outro": "Điện là dòng chuyển động của các điện tích."
+  }
+}

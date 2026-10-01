@@ -1,0 +1,15 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "an1": "A leaf is layered. A waxy cuticle and the epidermis protect it from above.",
+    "an2": "Below, palisade cells packed with chloroplasts catch light, and stomata let gases in and out.",
+    "an3": "Veins carry water up in the xylem, and sugar away in the phloem.",
+    "lr1": "Inside a chloroplast, chlorophyll absorbs light and splits water, releasing oxygen.",
+    "lr2": "That energy is stored as A T P and N A D P H for the next stage.",
+    "ca1": "In the Calvin cycle, carbon dioxide is captured and built up using that energy.",
+    "ca2": "The result is glucose, a sugar the plant uses for energy and growth.",
+    "sum1": "In total, light, water and carbon dioxide become glucose and oxygen.",
+    "outro": "Photosynthesis stores light energy as sugar, and respiration releases it again. Together, they power life."
+  }
+}

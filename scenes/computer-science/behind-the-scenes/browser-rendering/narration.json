@@ -1,0 +1,19 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "p1": "The browser receives H T M L as raw bytes. It decodes them into characters, then into tokens.",
+    "p2": "Tokens become nodes, and the nodes form a tree: the D O M.",
+    "c1": "C S S is parsed the same way, into the C S S O M, a tree of style rules.",
+    "c2": "It blocks rendering: the browser waits for the styles before it paints anything.",
+    "r1": "The D O M and the C S S O M combine into the render tree, which holds only what is visible.",
+    "r2": "The head, and anything with display none, is left out.",
+    "l1": "Layout works out the size and position of every box, in pixels.",
+    "l2": "Resize the window, and the browser has to lay everything out again.",
+    "pa1": "Paint turns boxes into pixels: text, colors, borders and images, drawn into layers.",
+    "pa2": "The G P U then composites the layers into the final frame on your screen.",
+    "j1": "Java Script can change the D O M or the styles, and the pipeline runs again from that step.",
+    "j2": "Changing transform or opacity only needs compositing, so it is cheap and smooth.",
+    "outro": "H T M L and C S S become trees, trees become boxes, and boxes become pixels. That is how a browser renders a page."
+  }
+}

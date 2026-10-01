@@ -1,0 +1,10 @@
+{
+  "title": "What is overfitting?",
+  "summary": "Underfit, good fit and overfit curves, train vs test error, and the fixes.",
+  "tags": [
+    "generalisation",
+    "training"
+  ],
+  "series": "How AI works",
+  "order": 13
+}

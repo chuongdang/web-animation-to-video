@@ -1,0 +1,10 @@
+{
+  "title": "Error detection",
+  "summary": "Why errors happen, and checksums, echo checks and ARQ.",
+  "tags": [
+    "checksum",
+    "ARQ"
+  ],
+  "series": "Grade 9 \u00b7 Unit 2: Data transmission",
+  "order": 4
+}

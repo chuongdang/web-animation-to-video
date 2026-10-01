@@ -1,0 +1,10 @@
+{
+  "title": "Data packets and packet switching",
+  "summary": "Packet structure, routing, out-of-order arrival and reassembly.",
+  "tags": [
+    "packets",
+    "routers"
+  ],
+  "series": "Grade 9 \u00b7 Unit 2: Data transmission",
+  "order": 1
+}

@@ -1,0 +1,10 @@
+{
+  "title": "How does AI work?",
+  "summary": "Neurons and weights, learning from mistakes, and predicting the next word.",
+  "tags": [
+    "neural networks",
+    "basics"
+  ],
+  "series": "How AI works",
+  "order": 1
+}

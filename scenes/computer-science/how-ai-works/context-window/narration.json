@@ -1,0 +1,13 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "cw1": "A language model can only read a fixed number of tokens at once. That is its context window.",
+    "cw2": "Your prompt, the chat history, and even its own reply all have to fit inside it.",
+    "cw3": "When a conversation grows longer, the oldest tokens fall out of the window.",
+    "cw4": "The model has no memory outside it, so it can forget what you said earlier.",
+    "cw5": "Attention compares every token with every other, so longer windows cost far more compute.",
+    "cw6": "Tricks like summarising the history, or retrieving only what matters, keep the important parts in view.",
+    "outro": "The context window is the model's working memory. Choose carefully what goes in."
+  }
+}

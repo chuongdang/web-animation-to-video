@@ -1,0 +1,11 @@
+{
+  "title": "Serial and parallel transmission",
+  "summary": "Bits one by one or all at once, skew, crosstalk and USB.",
+  "tags": [
+    "serial",
+    "parallel",
+    "USB"
+  ],
+  "series": "Grade 9 \u00b7 Unit 2: Data transmission",
+  "order": 3
+}

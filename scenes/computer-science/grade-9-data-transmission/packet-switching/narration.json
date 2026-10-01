@@ -1,0 +1,14 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "pk1": "Data sent over a long distance is broken into data packets, sometimes called datagrams.",
+    "pk2": "Each packet has three parts: a header, the payload, and a trailer.",
+    "pk3": "The header holds the I P address of the sender, the I P address of the receiver, the sequence number, and the packet size.",
+    "ps1": "In packet switching, each packet travels independently, and routers decide its route.",
+    "ps2": "A router picks the shortest available path, avoiding routes that are broken or busy.",
+    "ps3": "Packets can arrive out of order, so the receiver puts them back together using the sequence numbers.",
+    "ps4": "The benefit is that there are alternative routes if one is broken or overloaded. The drawback is that the data must be reassembled.",
+    "outro": "Split into packets, routed independently, and reassembled at the destination."
+  }
+}

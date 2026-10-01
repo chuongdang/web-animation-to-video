@@ -1,0 +1,14 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "e1": "Scrum assumes we cannot predict a complex project, so it asks us to learn from experience.",
+    "e2": "Steering by evidence beats following a plan that was only a guess.",
+    "e3": "Transparency: everyone sees the real state of the work.",
+    "e4": "Inspection: we check progress often enough to catch problems early.",
+    "e5": "Adaptation: when something is off, we change course straight away.",
+    "d1": "Without transparency, inspection is misleading. Without inspection, adaptation is blind.",
+    "d2": "Together they let a team learn fast and reduce risk.",
+    "outro": "See it. Check it. Change it."
+  }
+}

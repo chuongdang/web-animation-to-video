@@ -1,0 +1,10 @@
+{
+  "title": "How can AI use your own documents?",
+  "summary": "Retrieval-augmented generation: embed, retrieve, augment the prompt, generate.",
+  "tags": [
+    "RAG",
+    "embeddings"
+  ],
+  "series": "How AI works",
+  "order": 8
+}

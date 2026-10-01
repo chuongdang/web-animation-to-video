@@ -1,0 +1,16 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "r1": "Scrum has three accountabilities, each solving a different problem.",
+    "r2": "The Product Owner decides what is most valuable to build, and why.",
+    "r3": "The Developers decide how to build it, and own the quality.",
+    "r4": "The Scrum Master removes obstacles and helps the team improve.",
+    "v1": "Each event exists to inspect and adapt.",
+    "v2": "Sprint Planning agrees what we can deliver, and how.",
+    "v3": "The Daily Scrum is a short check on progress toward the goal.",
+    "v4": "The Sprint Review shows the increment and gathers feedback.",
+    "v5": "The Retrospective improves how the team works.",
+    "outro": "Every part has a purpose."
+  }
+}

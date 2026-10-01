@@ -1,0 +1,19 @@
+{
+  "title": "Why is copper a good conductor?",
+  "summary": "One loose outer electron per atom makes a sea of free electrons, and an orderly lattice lets them flow.",
+  "tags": [
+    "conductors",
+    "materials"
+  ],
+  "series": "Electricity basics",
+  "order": 2,
+  "vi": {
+    "title": "Vì sao đồng dẫn điện tốt?",
+    "summary": "Mỗi nguyên tử có một electron ngoài cùng lỏng lẻo tạo nên biển electron tự do, và mạng tinh thể ngăn nắp giúp chúng chảy dễ dàng.",
+    "tags": [
+      "chất dẫn điện",
+      "vật liệu"
+    ],
+    "series": "Kiến thức cơ bản về điện"
+  }
+}

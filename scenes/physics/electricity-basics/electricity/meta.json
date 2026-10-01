@@ -1,0 +1,19 @@
+{
+  "title": "What is electricity?",
+  "summary": "Atoms, free electrons and a battery-and-bulb circuit: voltage, current and resistance.",
+  "tags": [
+    "electrons",
+    "circuits"
+  ],
+  "series": "Electricity basics",
+  "order": 1,
+  "vi": {
+    "title": "Điện là gì?",
+    "summary": "Nguyên tử, electron tự do và mạch điện gồm pin và bóng đèn: hiệu điện thế, dòng điện và điện trở.",
+    "tags": [
+      "electron",
+      "mạch điện"
+    ],
+    "series": "Kiến thức cơ bản về điện"
+  }
+}

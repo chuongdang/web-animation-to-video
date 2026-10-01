@@ -1,0 +1,28 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "in1": "Ten quick questions on data transmission. Listen, think, then check your answer.",
+    "q1": "Question one. Which part of a data packet holds the sequence number? A, the payload. B, the header. Or C, the trailer.",
+    "a1": "The answer is B, the header. The header holds the sender and receiver I P addresses, the sequence number, and the packet size.",
+    "q2": "Question two. Packets from the same message: A, always arrive in order. B, can take different routes and arrive out of order. Or C, must all follow one route.",
+    "a2": "The answer is B. Routers choose a route for each packet, so packets can arrive out of order, and are reassembled using the sequence numbers.",
+    "q3": "Question three. Which transmission mode is a walkie talkie? A, simplex. B, half duplex. Or C, full duplex.",
+    "a3": "The answer is B, half duplex. Data can go both ways, but not at the same time.",
+    "q4": "Question four. Which type of transmission works better over long distances? A, serial. Or B, parallel.",
+    "a4": "The answer is A, serial. One bit at a time on a single wire stays synchronised, while parallel data suffers skew and crosstalk over distance.",
+    "q5": "Question five. Bits arriving at slightly different times in parallel transmission is called: A, crosstalk. B, skew. Or C, parity.",
+    "a5": "The answer is B, skew. Crosstalk is interference between wires, and parity is an error check.",
+    "q6": "Question six. Even parity. The seven data bits are zero one one zero one one one. What is the parity bit? A, zero. Or B, one.",
+    "a6": "The answer is B, one. There are five ones, which is odd, so the parity bit must be one, to make six ones.",
+    "q7": "Question seven. In a parity block, one row and one column fail their parity check. What does that tell us? A, the whole block was lost. B, the wrong bit is where they cross. Or C, the parity byte was not sent.",
+    "a7": "The answer is B. The bit at the crossing point is wrong, so it can be flipped back.",
+    "q8": "Question eight. Using the method from class, what is the check digit for the code three one four one five? A, four. B, six. Or C, eight.",
+    "a8": "The answer is B, six. Multiply by position: three, two, twelve, four, twenty five. The total is forty six, and the remainder is six.",
+    "q9": "Question nine. The receiver sends an acknowledgement, and the sender resends after a timeout. Which method is this? A, checksum. B, echo check. Or C, A R Q.",
+    "a9": "The answer is C, A R Q, automatic repeat request.",
+    "q10": "Question ten. Which encryption uses a public key and a private key? A, symmetric. Or B, asymmetric.",
+    "a10": "The answer is B, asymmetric. Symmetric encryption uses one shared key. And remember, encryption does not stop interception, it only stops the data making sense.",
+    "outro": "That is the end of the quiz. Review any topic you missed. Good luck with your test."
+  }
+}

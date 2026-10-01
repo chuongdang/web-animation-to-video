@@ -1,0 +1,13 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "net1": "An AI model is a huge network of simple artificial neurons, arranged in layers.",
+    "net2": "Each link has a weight, a number for how strongly one neuron influences the next.",
+    "train1": "To learn, it makes a guess, compares it with the right answer, and measures the error.",
+    "train2": "Then it nudges every weight to shrink that error, over billions of examples.",
+    "pred1": "A chat AI is trained on one simple task: predict the next word.",
+    "pred2": "Add a likely word, then repeat, and the patterns it learned become whole sentences.",
+    "outro": "Data in, patterns learned, predictions out. That is how AI works."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "p1": "The traditional way: plan everything up front, then build, test and deliver.",
+    "p2": "Months pass before anyone sees working software.",
+    "p3": "Meanwhile requirements change, and the customer only reacts at the very end.",
+    "p4": "The later we find a mistake, the more it costs to fix.",
+    "p5": "And software work is complex: we cannot predict everything in advance.",
+    "s1": "Scrum replaces one big bet with many small ones.",
+    "s2": "Build a little, show it, learn, and adjust.",
+    "outro": "Plan a little. Learn a lot."
+  }
+}

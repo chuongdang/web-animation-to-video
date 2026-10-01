@@ -1,0 +1,12 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "pa1": "Parity checking counts the number of one bits in a byte. The parity is either even, or odd.",
+    "pa2": "One bit, usually the left most, is reserved as the parity bit. For even parity, it is set so the total number of ones is even.",
+    "pa3": "Four ones is already even, so the parity bit is zero. With three ones, the parity bit must be one.",
+    "bk1": "A parity block adds a parity byte after a block of bytes. Every column gets a parity bit too.",
+    "bk2": "If one bit flips, one row and one column fail. The wrong bit sits where they cross, so it can be corrected.",
+    "outro": "A parity bit for each byte, a parity byte for each block. Errors found, and even fixed."
+  }
+}

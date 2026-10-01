@@ -1,0 +1,13 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "en1": "When data crosses a public network, a hacker, called an eavesdropper, can intercept it.",
+    "en2": "Encryption turns data into a form that is unreadable to anyone it is not meant for. It cannot stop interception, but it stops the data making sense.",
+    "sy1": "Symmetric encryption uses the same key to encrypt and to decrypt the message.",
+    "sy2": "For example, shift every letter by three. Hello becomes Khoor, and shifting back reveals it. But both sides must share the key.",
+    "as1": "Asymmetric encryption uses two keys: a public key, known to everyone, and a private key, kept secret.",
+    "as2": "The sender shares the public key. The receiver encrypts with it, and only the sender's private key can decrypt.",
+    "outro": "One shared key, or a public and private pair. Either way, interceptors see only scrambled data."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "h1": "A language model predicts what text is likely, not what is true.",
+    "h2": "When it lacks the facts, it still writes a fluent, confident guess. That is a hallucination.",
+    "h3": "Rare or missing facts leave gaps in what it learned, and it fills them with patterns.",
+    "h4": "And each word it writes becomes context for the next, so a small error can snowball.",
+    "h5": "Grounding answers in sources, as in retrieval, gives the model real facts to draw on.",
+    "h6": "And always verify important claims, especially names, numbers and quotes.",
+    "outro": "A fluent answer is not always a true one. Trust, but verify."
+  }
+}

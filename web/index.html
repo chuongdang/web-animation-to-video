@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knowledge Videos</title>
+  <meta name="description" content="Short animated explainers on physics, biology and computer science, organised by subject.">
+  <link rel="canonical" href="__SITE_URL__/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Knowledge Videos">
+  <meta property="og:title" content="Knowledge Videos">
+  <meta property="og:description" content="Short animated explainers on physics, biology and computer science, organised by subject.">
+  <meta property="og:url" content="__SITE_URL__/">
+  <meta property="og:image" content="__SITE_URL__/brand/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Knowledge Videos logo">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Knowledge Videos">
+  <meta name="twitter:description" content="Short animated explainers on physics, biology and computer science, organised by subject.">
+  <meta name="twitter:image" content="__SITE_URL__/brand/og.png">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="brand/favicon-16.png">
+  <link rel="apple-touch-icon" href="brand/apple-touch-icon.png">
+  <meta name="theme-color" content="#0b1020">
+  <link rel="stylesheet" href="style.css?v=mup6x5dl">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="#" aria-label="Knowledge Videos home">
+        <img class="mark" src="brand/logo.png" alt="" width="44" height="44">
+        <span>Knowledge Videos</span>
+      </a>
+      <div id="lang" class="lang" role="group" aria-label="Language" hidden></div>
+      <p class="tagline" id="tagline">Short animated explainers, organised by subject.</p>
+      <div class="controls">
+        <label class="search">
+          <span class="sr" id="q-label">Search videos</span>
+          <input id="q" type="search" placeholder="Search videos, topics, tags…" autocomplete="off">
+        </label>
+        <nav id="tabs" class="tabs" aria-label="Subjects"></nav>
+      </div>
+      <nav id="subtabs" class="tabs subtabs" aria-label="Sub categories" hidden></nav>
+      <p id="stats" class="stats"></p>
+    </div>
+  </header>
+
+  <main class="wrap" id="library" aria-live="polite"></main>
+
+  <footer class="wrap foot">
+    <p>© 2026</p>
+  </footer>
+
+  <div id="modal" class="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <article class="modal-card" role="dialog" aria-modal="true" aria-labelledby="m-title">
+      <button class="close" data-close aria-label="Close video">×</button>
+      <video id="player" controls preload="metadata" playsinline></video>
+      <div class="modal-body">
+        <p class="crumb" id="m-crumb"></p>
+        <h2 id="m-title"></h2>
+        <p id="m-summary"></p>
+        <div id="m-lang" class="lang modal-lang" role="group" aria-label="Video language" hidden></div>
+        <div class="modal-nav">
+          <button id="share" class="btn"></button>
+          <button id="prev" class="btn"></button>
+          <button id="next" class="btn"></button>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <script src="data.js?v=mup6x5dl"></script>
+  <script src="app.js?v=mup6x5dl"></script>
+</body>
+</html>

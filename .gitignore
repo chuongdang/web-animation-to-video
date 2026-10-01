@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+out
+site/
+deploy/
+CLAUDE.local.md
+.env
+scenes/**/audio/

@@ -1,0 +1,15 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "ov1": "Cells burn glucose with oxygen to release energy, and store it as A T P.",
+    "gly1": "In the cytoplasm, glycolysis splits glucose into two pyruvate.",
+    "gly2": "It nets two A T P, and needs no oxygen.",
+    "kr1": "Inside the mitochondrion, pyruvate is broken down by the Krebs cycle.",
+    "kr2": "Carbon leaves as carbon dioxide, and carriers pick up high energy electrons.",
+    "et1": "Electrons pass along the electron transport chain, pumping protons across a membrane.",
+    "et2": "Protons flow back through A T P synthase, making most of the A T P, while oxygen takes the electrons and forms water.",
+    "tal1": "One glucose yields about thirty A T P, roughly fifteen times more than without oxygen.",
+    "outro": "Glucose and oxygen in. Carbon dioxide, water, and energy out. That is cellular respiration."
+  }
+}

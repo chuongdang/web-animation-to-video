@@ -1,0 +1,15 @@
+{
+  "engine": "edge",
+  "voice": "vi-VN-HoaiMyNeural",
+  "speed": 0.95,
+  "lines": {
+    "cu1": "Một nguyên tử đồng có hai mươi chín electron, nhưng chỉ có một electron ở lớp ngoài cùng.",
+    "cu2": "Electron đơn lẻ đó liên kết yếu, nên rất dễ bị kéo ra.",
+    "sea1": "Trong đồng đặc, mỗi nguyên tử đều chia sẻ electron của mình, tạo thành một biển electron tự do.",
+    "sea2": "Khoảng một electron tự do trên mỗi nguyên tử: một lượng khổng lồ hạt mang điện.",
+    "comp1": "Trong cao su, các electron bị giữ chặt vào nguyên tử, nên không có gì chảy.",
+    "comp2": "Trong đồng, các electron trôi qua một mạng tinh thể ngăn nắp, với rất ít va chạm.",
+    "rank1": "Chỉ có bạc dẫn điện tốt hơn, nhưng đồng rẻ hơn và dễ kéo thành dây.",
+    "outro": "Nhiều electron tự do, và một mạng tinh thể ngăn nắp để chảy qua. Đó là lý do đồng là chất dẫn điện tuyệt vời."
+  }
+}

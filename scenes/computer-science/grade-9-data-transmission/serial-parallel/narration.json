@@ -1,0 +1,16 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "sr1": "Serial transmission sends one bit at a time, over a single wire.",
+    "sr2": "It works over long distances and arrives fully synchronised, but at a slower rate.",
+    "pl1": "Parallel transmission sends several bits, usually one byte, over several wires at the same time.",
+    "pl2": "It works well over short distances, like the circuits inside a computer, where high speed is essential.",
+    "pb1": "Over long distances, parallel data suffers from skew: bits arrive at slightly different times, or even out of order.",
+    "pb2": "Crosstalk between the wires also causes interference if the cable is too long.",
+    "us1": "The universal serial bus, or U S B, sends data serially.",
+    "us2": "Its advantages include a standard connector, devices detected automatically, power supplied to devices, and backwards compatibility.",
+    "us3": "Its disadvantages include a limited cable length, and a slower speed than some other connections.",
+    "outro": "Serial for distance, parallel for short, fast links. And U S B is serial."
+  }
+}

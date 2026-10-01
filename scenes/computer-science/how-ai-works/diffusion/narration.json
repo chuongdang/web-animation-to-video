@@ -1,0 +1,13 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "fw1": "Diffusion models learn by watching pictures being destroyed. Step by step, noise is added, until only static is left.",
+    "fw2": "At every step, the model is shown the noisy image, and asked to predict the noise that was added.",
+    "bw1": "To generate, we run it in reverse. Start from pure random noise.",
+    "bw2": "The model removes a little noise at each step, and a picture slowly emerges.",
+    "pr1": "A text prompt steers the denoising. The words are turned into embeddings, which guide every step.",
+    "pr2": "Different noise gives a different picture, even for the same prompt.",
+    "outro": "Add noise to learn. Remove noise to create. Guided by your words, static turns into an image."
+  }
+}

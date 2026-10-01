@@ -1,0 +1,10 @@
+{
+  "title": "What is an AI agent?",
+  "summary": "A model in a loop with tools and guardrails.",
+  "tags": [
+    "agents",
+    "tools"
+  ],
+  "series": "How AI works",
+  "order": 11
+}

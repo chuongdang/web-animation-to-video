@@ -1,0 +1,10 @@
+{
+  "title": "What are billions of parameters?",
+  "summary": "What a parameter is, how big a billion is, and why big models need racks of GPUs.",
+  "tags": [
+    "scale",
+    "memory"
+  ],
+  "series": "How AI works",
+  "order": 3
+}

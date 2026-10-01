@@ -1,0 +1,30 @@
+{
+  "name": "web-animation-to-video",
+  "version": "0.1.0",
+  "description": "Render web-based animations (canvas / SVG / CSS) to MP4, frame by frame.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node src/dev.js",
+    "render": "node src/render.js",
+    "narrate": "node src/narrate.js",
+    "setup": "playwright install chromium",
+    "make": "node src/make.js",
+    "new": "node src/new.js",
+    "site": "node src/site.js",
+    "preview": "node src/preview.js",
+    "og": "node src/og-image.js",
+    "site:serve": "node src/site-serve.js",
+    "deploy": "bash deploy/deploy.sh"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "ffmpeg-static": "^5.2.0",
+    "kokoro-js": "^1.2.1",
+    "playwright": "^1.49.0"
+  }
+}

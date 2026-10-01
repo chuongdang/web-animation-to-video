@@ -1,0 +1,19 @@
+{
+  "title": "Inside a leaf: how photosynthesis works",
+  "summary": "Leaf anatomy, then the light reactions and the Calvin cycle that turn light, water and CO2 into glucose.",
+  "tags": [
+    "leaf",
+    "chloroplast"
+  ],
+  "series": "Energy in cells",
+  "order": 2,
+  "vi": {
+    "title": "Bên trong chiếc lá: quang hợp diễn ra thế nào",
+    "summary": "Cấu tạo của lá, rồi các phản ứng sáng và chu trình Calvin biến ánh sáng, nước và CO2 thành glucose.",
+    "tags": [
+      "lá",
+      "lục lạp"
+    ],
+    "series": "Năng lượng trong tế bào"
+  }
+}

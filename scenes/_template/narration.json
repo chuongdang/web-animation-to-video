@@ -1,0 +1,9 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "one1": "The first thing to say.",
+    "one2": "The second thing to say.",
+    "outro": "A closing line."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "ag1": "A plain language model can only produce text. It cannot search, calculate, or act.",
+    "ag2": "Give it tools, and it can ask for them to be run.",
+    "ag3": "An agent works in a loop: think, call a tool, then read the result.",
+    "ag4": "It repeats until the task is done, and then writes the final answer.",
+    "ag5": "Because agents can act, they need guardrails: permissions, step limits, and checks.",
+    "ag6": "For risky actions, a human approves before anything happens.",
+    "outro": "An agent is a language model in a loop, with tools and limits."
+  }
+}

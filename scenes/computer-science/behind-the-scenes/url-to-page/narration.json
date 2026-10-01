@@ -1,0 +1,19 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "u1": "You type a U R L. The browser splits it into scheme, host and path, and checks its caches.",
+    "d1": "No luck, so it asks D N S. The resolver walks from the root, to the dot com servers, to the authoritative server.",
+    "d2": "The answer is an I P address, and every step along the way caches it.",
+    "t1": "Next, a T C P connection: the browser sends a SYN, the server answers SYN ACK, and the browser confirms with an ACK.",
+    "t2": "Then T L S agrees on encryption keys, so everything after that is private.",
+    "s1": "The request lands on a C D N edge server near you, which answers with the static H T M L straight from its cache.",
+    "s2": "That page points to C S S and Java Script bundles with hashed names, which can be cached for a year.",
+    "r1": "The browser builds the D O M, and downloads the C S S and Java Script in parallel.",
+    "r2": "The first paint shows the app shell, while the data is still on its way.",
+    "g1": "Now the Java Script calls the A P I: a fetch to the Go backend, over the same secure connection.",
+    "g2": "Go routes the request to a handler, through middleware, queries the database, and answers with J S O N.",
+    "h1": "The Java Script turns the J S O N into elements, and the browser lays out and paints the finished page.",
+    "outro": "D N S, T C P, T L S, a static shell from the edge, one call to a Go A P I, and a render. Usually in well under a second."
+  }
+}

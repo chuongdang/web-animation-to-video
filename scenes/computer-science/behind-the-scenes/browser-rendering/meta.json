@@ -1,0 +1,11 @@
+{
+  "title": "How does a browser render a page?",
+  "summary": "From HTML and CSS bytes to pixels: DOM, CSSOM, render tree, layout, paint and compositing.",
+  "tags": [
+    "browser",
+    "rendering",
+    "DOM"
+  ],
+  "series": "Behind the scenes",
+  "order": 2
+}

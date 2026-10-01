@@ -1,0 +1,10 @@
+{
+  "title": "Can AI be biased?",
+  "summary": "Skewed data, where bias comes from, proxies, and how to audit and fix it.",
+  "tags": [
+    "fairness",
+    "data"
+  ],
+  "series": "How AI works",
+  "order": 12
+}

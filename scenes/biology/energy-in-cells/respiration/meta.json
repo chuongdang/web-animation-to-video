@@ -1,0 +1,19 @@
+{
+  "title": "How do cells make energy?",
+  "summary": "Glycolysis, the Krebs cycle and the electron transport chain: about 30 ATP from one glucose.",
+  "tags": [
+    "ATP",
+    "mitochondria"
+  ],
+  "series": "Energy in cells",
+  "order": 1,
+  "vi": {
+    "title": "Tế bào tạo ra năng lượng thế nào?",
+    "summary": "Đường phân, chu trình Krebs và chuỗi truyền electron: khoảng 30 ATP từ một phân tử glucose.",
+    "tags": [
+      "ATP",
+      "ti thể"
+    ],
+    "series": "Năng lượng trong tế bào"
+  }
+}

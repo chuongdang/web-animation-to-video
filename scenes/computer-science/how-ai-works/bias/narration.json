@@ -1,0 +1,13 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "b1": "A model learns the patterns in its training data, including the ones we would rather not repeat.",
+    "b2": "If the data is skewed, the model's predictions will be skewed too.",
+    "b3": "Bias enters through unrepresentative samples, biased labels, and proxies like a postcode.",
+    "b4": "Removing a sensitive column is not enough, because other features can stand in for it.",
+    "b5": "Test results by group, not just on average, to find where the model fails.",
+    "b6": "Then balance the data, review the labels, and keep humans accountable.",
+    "outro": "Data in, bias out, unless we look."
+  }
+}

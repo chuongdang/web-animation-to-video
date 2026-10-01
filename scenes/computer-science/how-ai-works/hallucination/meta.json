@@ -1,0 +1,10 @@
+{
+  "title": "Why does AI make things up?",
+  "summary": "Likely is not the same as true: gaps, snowballing errors, and what helps.",
+  "tags": [
+    "reliability",
+    "LLM"
+  ],
+  "series": "How AI works",
+  "order": 9
+}

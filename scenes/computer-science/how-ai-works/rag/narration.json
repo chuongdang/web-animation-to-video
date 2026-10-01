@@ -1,0 +1,13 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "rg1": "A language model only knows what was in its training data, which is frozen in time.",
+    "rg2": "It cannot see your private documents, or yesterday's news, so it may simply guess.",
+    "rg3": "Documents are split into chunks, and each chunk becomes an embedding: a point on a map of meaning.",
+    "rg4": "Your question becomes a point too, and the nearest chunks are retrieved.",
+    "rg5": "The retrieved chunks are pasted into the prompt, next to your question.",
+    "rg6": "Now the model answers from real sources, and can even cite them.",
+    "outro": "Retrieve, augment, generate. That is retrieval augmented generation: it gives the model an open book."
+  }
+}

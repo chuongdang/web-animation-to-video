@@ -1,0 +1,10 @@
+{
+  "title": "What does temperature do?",
+  "summary": "Scores become probabilities, and temperature sharpens or flattens them.",
+  "tags": [
+    "sampling",
+    "LLM"
+  ],
+  "series": "How AI works",
+  "order": 6
+}

@@ -1,0 +1,13 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "tok1": "Text is chopped into tokens, and each token becomes a list of numbers, called an embedding.",
+    "tok2": "Words with similar meanings get similar numbers, so cat lands near dog.",
+    "att1": "To read a word, the model looks at every other word, and decides which ones matter.",
+    "att2": "That is attention. It points to animal, but change the ending, and it points to street.",
+    "stack1": "Dozens of stacked layers refine the meaning of every word.",
+    "stack2": "At the top, it scores the next token, and the loop starts again.",
+    "outro": "Tokens in, attention across them, one next word out. Repeat that, and you get a conversation."
+  }
+}
