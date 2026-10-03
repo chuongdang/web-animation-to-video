@@ -46,6 +46,8 @@ npm run dev                   # live preview with scrubber: http://localhost:517
 npm run make -- electricity   # narrate + render -> out/physics/electricity-basics/electricity.mp4
 ```
 
+Prefer to let Claude do it? Install the [Claude Code skill](#claude-code-skill) and ask for a video on any topic.
+
 Scenes are organised by field (subject) and sub-category: `scenes/<field>/<sub>/<name>/` and the video goes to
 `out/<field>/<sub>/<name>.mp4`. Any unique tail of the id works: `electricity`, `electricity-basics/electricity`.
 
@@ -121,6 +123,37 @@ Set `"engine"` in `narration.json` (preferred first): `chatterbox` (very natural
 neural voices via `edge-tts`, free, text is sent to Microsoft; used for Vietnamese with `"voice": "vi-VN-HoaiMyNeural"`) or `piper` (fully
 local, but flat-sounding: the last resort). Chatterbox and F5 install into their own Python 3.11 venv on first use (via `uv`, ~GBs of torch)
 and run best on a GPU / Apple Silicon. The scene switches its on-screen text on `LANG` from `runtime/kit.js`.
+
+## Claude Code skill
+
+`skills/create-illustration-video/` is a [Claude Code](https://claude.com/claude-code) skill that makes a video for a topic end to end (plan, scaffold,
+narration, scene, preview check, render). Install it once so it works from any directory:
+
+```bash
+npm run skill:install                  # copies it to ~/.claude/skills/create-illustration-video (--uninstall to remove, --dest <dir> to change the target)
+```
+
+Then ask Claude Code, e.g. *"create an illustration video about how DNS works"* (or *"... as an internal video"* to put it under
+`scenes/internal/`), or invoke it directly with `/create-illustration-video`. Edit the skill in `skills/`, then re-run the install.
+
+```mermaid
+flowchart LR
+    ASK["you: topic"]:::ask --> PL["1 plan<br/>id, chapters,<br/>what each shows"]:::plan
+    PL --> SC["2 scaffold<br/>npm run new<br/>+ meta.json"]:::scaffold
+    SC --> NA["3 narration.json<br/>short lines first"]:::narr
+    NA --> SN["4 scene.js<br/>kit.js helpers,<br/>pure function of t"]:::scene
+    SN --> PV["5 narrate + preview<br/>look at the contact sheet"]:::check
+    PV -->|overlap, off-screen,<br/>gaps| SN
+    PV -->|clean| MK["6 npm run make<br/>out/.../name.mp4"]:::out
+
+    classDef ask fill:#4dd8ff,stroke:#0a7ea4,color:#06202b
+    classDef plan fill:#b794f6,stroke:#6b46c1,color:#1a0b33
+    classDef scaffold fill:#ffd166,stroke:#b8860b,color:#2b2100
+    classDef narr fill:#ffa94d,stroke:#c26a00,color:#2b1600
+    classDef scene fill:#7ee787,stroke:#2e8b3d,color:#08240f
+    classDef check fill:#ff8fa3,stroke:#c0364f,color:#2b0610
+    classDef out fill:#69db7c,stroke:#2b8a3e,color:#08240f
+```
 
 ## Writing a scene
 
@@ -234,6 +267,7 @@ src/preview.js       low-res render + contact sheet for checking a scene
 src/og-image.js      regenerates the site's link-preview image
 scenes/<field>/<sub>/<name>/   index.html, scene.js, narration.json, audio/
 scenes/_template/    starting point for new scenes
+skills/              Claude Code skills (create-illustration-video), installed by npm run skill:install
 scenes/internal/     internal scenes: git-ignored, not on the site
 out/<field>/<sub>/<name>.mp4
 

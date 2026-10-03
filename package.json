@@ -17,6 +17,7 @@
     "site": "node src/site.js",
     "preview": "node src/preview.js",
     "og": "node src/og-image.js",
+    "skill:install": "node src/install-skill.js",
     "site:serve": "node src/site-serve.js",
     "deploy": "bash deploy/deploy.sh",
     "test": "node tests/build.js && node --test \"tests/*.test.js\""

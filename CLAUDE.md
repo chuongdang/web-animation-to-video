@@ -20,10 +20,15 @@ npm run render -- <field>/<sub>/<name> --lang vi    # -> out/<field>/<sub>/<name
 npm run preview -- <scene> [secs]       # low-res render + contact sheet at out/preview/<name>.png to eyeball a scene
 npm run og                             # regenerate web/brand/og.png (link-preview card) via src/og-image.js
 npm run site                           # build site/ from web/ (source) + out/ (videos, posters, data.js)
+npm run skill:install                  # install skills/create-illustration-video into ~/.claude/skills (--uninstall, --dest <dir>)
 npm test                               # build the site into a temp dir (SITE_DIR, SITE_URL=https://example.test), then tests/*.test.js
 ```
 
 Any unique tail of the id resolves (`electricity`, `electricity-basics/electricity`). `make` does not forward extra flags to `render`.
+
+## Claude skill
+
+`skills/create-illustration-video/SKILL.md` is the workflow for turning a topic into a video (plan, scaffold, narration, scene, preview, render). `src/install-skill.js` copies every `skills/<name>/` to `~/.claude/skills/` and fills the `{{REPO}}` placeholder with this repo's path, so the skill works from any directory; edit the source in `skills/`, then re-run the install.
 
 ## Architecture
 
