@@ -27,12 +27,12 @@ flowchart LR
     R --> W1
     W2 --> O --> F --> M
 
-    classDef scene fill:#4dd8ff,stroke:#0a7ea4,color:#06202b
-    classDef audio fill:#ffd166,stroke:#b8860b,color:#2b2100
-    classDef render fill:#b794f6,stroke:#6b46c1,color:#1a0b33
-    classDef chrome fill:#7ee787,stroke:#2e8b3d,color:#08240f
-    classDef ffmpeg fill:#ff8fa3,stroke:#c0364f,color:#2b0610
-    classDef out fill:#ffa94d,stroke:#c26a00,color:#2b1600
+    classDef scene fill:#1e293b,stroke:#22d3ee,stroke-width:2px,color:#f1f5f9
+    classDef audio fill:#1e293b,stroke:#fbbf24,stroke-width:2px,color:#f1f5f9
+    classDef render fill:#1e293b,stroke:#a78bfa,stroke-width:2px,color:#f1f5f9
+    classDef chrome fill:#1e293b,stroke:#34d399,stroke-width:2px,color:#f1f5f9
+    classDef ffmpeg fill:#1e293b,stroke:#fb7185,stroke-width:2px,color:#f1f5f9
+    classDef out fill:#1e293b,stroke:#fb923c,stroke-width:2px,color:#f1f5f9
 ```
 
 Because every frame is derived from `t` alone, workers can render frames in any order and the result is identical on every run.
@@ -94,16 +94,16 @@ flowchart TD
     T --> S["scene plan():<br/>captions, keyword highlights"]:::scene
     T --> X["renderer mixes clips<br/>into the MP4"]:::scene
 
-    classDef cfg fill:#4dd8ff,stroke:#0a7ea4,color:#06202b
-    classDef decide fill:#fff3bf,stroke:#b8860b,color:#2b2100
-    classDef cache fill:#d0ebff,stroke:#1c7ed6,color:#0b2540
-    classDef best fill:#69db7c,stroke:#2b8a3e,color:#08240f
-    classDef good fill:#a9e34b,stroke:#5c940d,color:#1c2b02
-    classDef ok fill:#ffd43b,stroke:#b8860b,color:#2b2100
-    classDef last fill:#ffa8a8,stroke:#c92a2a,color:#2b0606
-    classDef audio fill:#ffd166,stroke:#b8860b,color:#2b2100
-    classDef timing fill:#b794f6,stroke:#6b46c1,color:#1a0b33
-    classDef scene fill:#ff8fa3,stroke:#c0364f,color:#2b0610
+    classDef cfg fill:#1e293b,stroke:#22d3ee,stroke-width:2px,color:#f1f5f9
+    classDef decide fill:#1e293b,stroke:#f59e0b,stroke-width:2px,color:#f1f5f9
+    classDef cache fill:#1e293b,stroke:#60a5fa,stroke-width:2px,color:#f1f5f9
+    classDef best fill:#1e293b,stroke:#34d399,stroke-width:2px,color:#f1f5f9
+    classDef good fill:#1e293b,stroke:#a3e635,stroke-width:2px,color:#f1f5f9
+    classDef ok fill:#1e293b,stroke:#fbbf24,stroke-width:2px,color:#f1f5f9
+    classDef last fill:#1e293b,stroke:#f43f5e,stroke-width:2px,color:#f1f5f9
+    classDef audio fill:#1e293b,stroke:#fbbf24,stroke-width:2px,color:#f1f5f9
+    classDef timing fill:#1e293b,stroke:#a78bfa,stroke-width:2px,color:#f1f5f9
+    classDef scene fill:#1e293b,stroke:#fb7185,stroke-width:2px,color:#f1f5f9
 ```
 
 `narration.json` holds the voice, speed and one text line per id; unchanged lines are cached. The scene reads
@@ -146,13 +146,13 @@ flowchart LR
     PV -->|overlap, off-screen,<br/>gaps| SN
     PV -->|clean| MK["6 npm run make<br/>out/.../name.mp4"]:::out
 
-    classDef ask fill:#4dd8ff,stroke:#0a7ea4,color:#06202b
-    classDef plan fill:#b794f6,stroke:#6b46c1,color:#1a0b33
-    classDef scaffold fill:#ffd166,stroke:#b8860b,color:#2b2100
-    classDef narr fill:#ffa94d,stroke:#c26a00,color:#2b1600
-    classDef scene fill:#7ee787,stroke:#2e8b3d,color:#08240f
-    classDef check fill:#ff8fa3,stroke:#c0364f,color:#2b0610
-    classDef out fill:#69db7c,stroke:#2b8a3e,color:#08240f
+    classDef ask fill:#1e293b,stroke:#22d3ee,stroke-width:2px,color:#f1f5f9
+    classDef plan fill:#1e293b,stroke:#a78bfa,stroke-width:2px,color:#f1f5f9
+    classDef scaffold fill:#1e293b,stroke:#fbbf24,stroke-width:2px,color:#f1f5f9
+    classDef narr fill:#1e293b,stroke:#fb923c,stroke-width:2px,color:#f1f5f9
+    classDef scene fill:#1e293b,stroke:#34d399,stroke-width:2px,color:#f1f5f9
+    classDef check fill:#1e293b,stroke:#fb7185,stroke-width:2px,color:#f1f5f9
+    classDef out fill:#1e293b,stroke:#34d399,stroke-width:2px,color:#f1f5f9
 ```
 
 ## Writing a scene
@@ -198,14 +198,14 @@ flowchart LR
 
     X["scenes/internal/**"]:::skip -. "git-ignored, never built" .-> B
 
-    classDef src fill:#4dd8ff,stroke:#0a7ea4,color:#06202b
-    classDef out fill:#ffa94d,stroke:#c26a00,color:#2b1600
-    classDef build fill:#b794f6,stroke:#6b46c1,color:#1a0b33
-    classDef asset fill:#7ee787,stroke:#2e8b3d,color:#08240f
-    classDef seo fill:#ffd166,stroke:#b8860b,color:#2b2100
-    classDef site fill:#ff8fa3,stroke:#c0364f,color:#2b0610
-    classDef deploy fill:#69db7c,stroke:#2b8a3e,color:#08240f
-    classDef skip fill:#ced4da,stroke:#868e96,color:#212529,stroke-dasharray:4 3
+    classDef src fill:#1e293b,stroke:#22d3ee,stroke-width:2px,color:#f1f5f9
+    classDef out fill:#1e293b,stroke:#fb923c,stroke-width:2px,color:#f1f5f9
+    classDef build fill:#1e293b,stroke:#a78bfa,stroke-width:2px,color:#f1f5f9
+    classDef asset fill:#1e293b,stroke:#34d399,stroke-width:2px,color:#f1f5f9
+    classDef seo fill:#1e293b,stroke:#fbbf24,stroke-width:2px,color:#f1f5f9
+    classDef site fill:#1e293b,stroke:#fb7185,stroke-width:2px,color:#f1f5f9
+    classDef deploy fill:#1e293b,stroke:#34d399,stroke-width:2px,color:#f1f5f9
+    classDef skip fill:#1e293b,stroke:#94a3b8,stroke-width:2px,color:#f1f5f9,stroke-dasharray:4 3
 ```
 
 Language variants (`<name>.<lang>.mp4`) appear automatically: the page gets an EN/VI switcher, and a language only lists videos rendered in it. Translate the text with a `"vi": { "title": ..., "summary": ..., "tags": [...], "series": ... }` block in `meta.json` (and `title`/`blurb` in `field.json`).
@@ -232,13 +232,13 @@ flowchart LR
     T --> SPA["browser loads the SPA<br/>and takes over (history API)"]:::spa
     L["other languages: /vi/ prefix<br/>no prefix = always English"]:::lang -.-> U
 
-    classDef url fill:#4dd8ff,stroke:#0a7ea4,color:#06202b
-    classDef decide fill:#fff3bf,stroke:#b8860b,color:#2b2100
-    classDef page fill:#b794f6,stroke:#6b46c1,color:#1a0b33
-    classDef watch fill:#ff8fa3,stroke:#c0364f,color:#2b0610
-    classDef seo fill:#ffd166,stroke:#b8860b,color:#2b2100
-    classDef spa fill:#7ee787,stroke:#2e8b3d,color:#08240f
-    classDef lang fill:#ffa94d,stroke:#c26a00,color:#2b1600
+    classDef url fill:#1e293b,stroke:#22d3ee,stroke-width:2px,color:#f1f5f9
+    classDef decide fill:#1e293b,stroke:#f59e0b,stroke-width:2px,color:#f1f5f9
+    classDef page fill:#1e293b,stroke:#a78bfa,stroke-width:2px,color:#f1f5f9
+    classDef watch fill:#1e293b,stroke:#fb7185,stroke-width:2px,color:#f1f5f9
+    classDef seo fill:#1e293b,stroke:#fbbf24,stroke-width:2px,color:#f1f5f9
+    classDef spa fill:#1e293b,stroke:#34d399,stroke-width:2px,color:#f1f5f9
+    classDef lang fill:#1e293b,stroke:#fb923c,stroke-width:2px,color:#f1f5f9
 ```
 
 Pages come from the `web/index.html` template (`<!--SEO-->`, `<!--H1-->`, `<!--MAIN-->` markers; asset paths stay absolute). Also generated:
