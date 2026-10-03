@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import ffmpegPath from 'ffmpeg-static';
-import { listScenes } from '../server.js';
+import { listScenes, INTERNAL_FIELD } from '../server.js';
 import { ROOT, SITE, LANG_NAMES, readJson, titleCase } from './config.js';
 
 function duration(file) {
@@ -61,6 +61,7 @@ export function buildCatalog() {
   const videos = [];
   const missing = [];
   for (const scene of listScenes()) {
+    if (scene.field === INTERNAL_FIELD) continue; // internal scenes never reach the site
     const langs = renderedLangs(scene);
     if (!langs.length) { missing.push(scene.id); continue; }
     const fieldMeta = readJson(path.join(ROOT, 'scenes', scene.field, 'field.json'), {});

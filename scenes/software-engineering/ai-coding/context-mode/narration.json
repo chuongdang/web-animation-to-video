@@ -1,0 +1,13 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "c1": "The biggest token drain is tool output. One test run, one log file or one web page can dump tens of thousands of tokens into the context window.",
+    "c2": "Context-mode runs the command in a sandbox instead. The raw output stays outside, and only the answer you asked for comes back.",
+    "c3": "Large content is indexed into a local database, with ranked full-text search.",
+    "c4": "Later, the agent searches, and gets back only the matching snippets instead of the whole document.",
+    "c5": "It also records session events: edits, tasks and decisions.",
+    "c6": "After the context is compacted, it retrieves just the relevant memories, so the agent keeps its thread.",
+    "outro": "Sandbox the output. Search, don't read. Remember what matters."
+  }
+}

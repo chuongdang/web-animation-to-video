@@ -6,3 +6,6 @@ deploy/
 CLAUDE.local.md
 .env
 scenes/**/audio/
+
+# scenes/internal/ holds internal scenes: usable locally (dev/narrate/render) but never committed or put on the site
+scenes/internal/

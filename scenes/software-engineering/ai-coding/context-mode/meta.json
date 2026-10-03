@@ -1,0 +1,1 @@
+{ "title": "context-mode: keep tool output out of your context", "summary": "How the context-mode plugin runs commands in a sandbox so only the answer reaches Claude, indexes large content for search, and restores relevant memory after compaction.", "tags": ["claude-code", "context-mode", "tokens", "mcp", "ai-coding"], "series": "AI-assisted coding", "order": 2 }

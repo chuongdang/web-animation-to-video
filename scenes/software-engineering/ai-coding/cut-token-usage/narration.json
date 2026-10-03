@@ -1,0 +1,19 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "p1": "When Claude Code explores a codebase by reading files, every file lands in the context window, and every token costs money.",
+    "p2": "On a big repo, most of those tokens go to code that has nothing to do with the task.",
+    "g1": "So index the code once with graphify. It turns your source into a knowledge graph of files, functions and how they connect.",
+    "g2": "Commit the graph, and the whole team shares it. Nobody pays to re-explore the same repo.",
+    "g3": "Now the agent queries the graph through the graphify M C P server, instead of loading the big JSON file, and reads only the few files that matter.",
+    "pl1": "Next, the agent queries the graph over M C P, reads your requirements, and writes an execution plan.",
+    "pl2": "You confirm the plan before any code changes. If something is off, it refines the plan and asks again.",
+    "pl3": "Fixing a plan costs a few lines. Fixing code costs a rewrite.",
+    "d1": "Once approved, the main agent delegates each step to a subagent.",
+    "d2": "Each subagent starts with a small, clean context, works on its own slice, and returns only a short summary.",
+    "v1": "At the end, validate: run the tests, and check the result against the requirements.",
+    "v2": "Anything missing goes back to a subagent for a fix.",
+    "outro": "Index once, plan first, delegate small, validate last."
+  }
+}

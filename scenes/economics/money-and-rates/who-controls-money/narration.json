@@ -1,0 +1,17 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "q1": "Who decides how much money a country has? And if no new paper money is printed, how can there be so much more in the bank?",
+    "c1": "Cash is only a small slice. In most countries, roughly nine tenths of all money is just numbers in bank accounts.",
+    "c2": "Those numbers are real money. You can pay, save and borrow with them, exactly like cash.",
+    "b1": "So where does it come from? Mostly from banks. When a bank approves a loan, it types the amount into the borrower's account.",
+    "b1b": "That new deposit is new money, and no printing press is involved.",
+    "b2": "When the loan is repaid, the money disappears again. So the money supply grows and shrinks with lending.",
+    "r1": "Nobody controls it with a single switch. The central bank sets the interest rate, which is the price of borrowing. High rates mean fewer loans, and low rates mean more.",
+    "r2": "It also creates reserves, the money banks hold with it, and regulators set rules on how much banks may lend against their capital.",
+    "r3": "Governments matter too: when they spend and borrow, more money flows into accounts. And in the end, people and firms must want to borrow.",
+    "i1": "The real limit is not a number of notes. It is what the economy can produce. If money grows much faster than goods, prices rise, and that is inflation.",
+    "outro": "Money is mostly a promise, and managing it means managing trust."
+  }
+}

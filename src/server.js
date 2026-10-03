@@ -26,6 +26,9 @@ const MIME = {
   '.wav': 'audio/wav',
 };
 
+/** scenes/internal/ is a regular field for dev/narrate/render, but git-ignored and left out of the site build */
+export const INTERNAL_FIELD = 'internal';
+
 /**
  * Scenes live in scenes/<field>/<sub>/<name>/index.html
  * (field = subject, e.g. physics; sub = sub-category / series folder, e.g. electricity-basics).

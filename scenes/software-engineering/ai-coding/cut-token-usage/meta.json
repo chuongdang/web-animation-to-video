@@ -1,0 +1,1 @@
+{ "title": "How to cut Claude Code token usage", "summary": "A workflow that saves tokens: index the codebase once with graphify and share it with the team, plan from the graph and requirements, confirm the plan, delegate to subagents, then validate.", "tags": ["claude-code", "tokens", "graphify", "subagents", "ai-coding"], "series": "AI-assisted coding", "order": 1 }

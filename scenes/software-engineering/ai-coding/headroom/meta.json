@@ -1,0 +1,1 @@
+{ "title": "Headroom: compress what the model reads", "summary": "How Headroom, an open-source context-compression layer, shrinks tool output, logs and code before they reach the model, with content-aware compressors and reversible caching.", "tags": ["claude-code", "headroom", "tokens", "compression", "ai-coding"], "series": "AI-assisted coding", "order": 3 }

@@ -6,6 +6,37 @@ Instead of screen-recording, the renderer drives headless Chromium **frame by fr
 for each frame it calls `window.setTime(t)`, takes a screenshot, and pipes it to ffmpeg.
 Output is deterministic, never drops frames, and renders at any resolution/fps.
 
+## How it works
+
+```mermaid
+flowchart LR
+    subgraph scene["Scene (pure function of t)"]
+        A["scene.js<br/>Scene.define()"]:::scene
+        N["audio/timing.json<br/>+ audio clips"]:::audio
+    end
+    R["render.js<br/>for each frame i:<br/>t = i / fps"]:::render
+    subgraph pool["Parallel Chromium workers (-j)"]
+        W1["window.setTime(t)"]:::chrome --> W2["screenshot<br/>JPEG q95"]:::chrome
+    end
+    O["reorder<br/>frames 0..n"]:::render
+    F["ffmpeg<br/>H.264 + mix audio"]:::ffmpeg
+    M[("out/field/sub/name.mp4")]:::out
+
+    A -->|loaded in headless Chromium| R
+    N -.->|clips + start times| F
+    R --> W1
+    W2 --> O --> F --> M
+
+    classDef scene fill:#4dd8ff,stroke:#0a7ea4,color:#06202b
+    classDef audio fill:#ffd166,stroke:#b8860b,color:#2b2100
+    classDef render fill:#b794f6,stroke:#6b46c1,color:#1a0b33
+    classDef chrome fill:#7ee787,stroke:#2e8b3d,color:#08240f
+    classDef ffmpeg fill:#ff8fa3,stroke:#c0364f,color:#2b0610
+    classDef out fill:#ffa94d,stroke:#c26a00,color:#2b1600
+```
+
+Because every frame is derived from `t` alone, workers can render frames in any order and the result is identical on every run.
+
 ## Quick start
 
 ```bash
@@ -39,11 +70,38 @@ ffmpeg is bundled through `ffmpeg-static`; nothing to install system-wide.
 
 ## Narration (text to speech)
 
-Local, free, no API key: [Kokoro](https://github.com/hexgrad/kokoro) via `kokoro-js` (model downloads once, ~90MB).
+Local, free, no API key. The default engine is [Kokoro](https://github.com/hexgrad/kokoro) via `kokoro-js` (model downloads once, ~90MB); Chatterbox, F5-TTS and others are below.
 
 ```bash
 npm run narrate -- electricity   # narration.json -> audio/*.wav + audio/timing.json
 npm run render -- electricity    # scene times itself to the speech; the renderer mixes the clips in
+```
+
+```mermaid
+flowchart TD
+    J["narration.json<br/>engine, voice, speed, lines"]:::cfg --> H{"line changed?<br/>hash of text, voice,<br/>speed, engine options"}:::decide
+    H -- no --> C["cached wav"]:::cache
+    H -- yes --> E{"engine"}:::decide
+    E --> CB["chatterbox<br/>local, cloning"]:::best
+    E --> F5["f5<br/>local, cloning"]:::best
+    E --> KO["kokoro (default)<br/>local, English"]:::good
+    E --> ED["edge<br/>cloud, free"]:::ok
+    E --> PI["piper<br/>local, last resort"]:::last
+    CB & F5 & KO & ED & PI --> W["audio/id.wav"]:::audio
+    C & W --> T["audio/timing.json<br/>duration per line"]:::timing
+    T --> S["scene plan():<br/>captions, keyword highlights"]:::scene
+    T --> X["renderer mixes clips<br/>into the MP4"]:::scene
+
+    classDef cfg fill:#4dd8ff,stroke:#0a7ea4,color:#06202b
+    classDef decide fill:#fff3bf,stroke:#b8860b,color:#2b2100
+    classDef cache fill:#d0ebff,stroke:#1c7ed6,color:#0b2540
+    classDef best fill:#69db7c,stroke:#2b8a3e,color:#08240f
+    classDef good fill:#a9e34b,stroke:#5c940d,color:#1c2b02
+    classDef ok fill:#ffd43b,stroke:#b8860b,color:#2b2100
+    classDef last fill:#ffa8a8,stroke:#c92a2a,color:#2b0606
+    classDef audio fill:#ffd166,stroke:#b8860b,color:#2b2100
+    classDef timing fill:#b794f6,stroke:#6b46c1,color:#1a0b33
+    classDef scene fill:#ff8fa3,stroke:#c0364f,color:#2b0610
 ```
 
 `narration.json` holds the voice, speed and one text line per id; unchanged lines are cached. The scene reads
@@ -58,9 +116,11 @@ npm run narrate -- electricity --lang vi   # narration.vi.json -> audio/vi/ (edg
 npm run render  -- electricity --lang vi   # -> out/physics/electricity-basics/electricity.vi.mp4
 ```
 
-Kokoro only speaks English, so other languages set `"engine"` in `narration.<lang>.json`: `edge` (Microsoft neural voices via
-`edge-tts`, free, no key, text is sent to Microsoft; used for Vietnamese with `"voice": "vi-VN-HoaiMyNeural"`) or `piper` (fully local,
-but the Vietnamese voice sounds flat). The scene switches its on-screen text on `LANG` from `runtime/kit.js`.
+Set `"engine"` in `narration.json` (preferred first): `chatterbox` (very natural, optional voice cloning, English; add `"ref": "audio/ref.wav"`,
+`"exaggeration"`, `"cfg"`), `f5` (zero-shot voice cloning; `"ref"`, `"refText"`, `"model"`), `kokoro` (default, English only), `edge` (Microsoft
+neural voices via `edge-tts`, free, text is sent to Microsoft; used for Vietnamese with `"voice": "vi-VN-HoaiMyNeural"`) or `piper` (fully
+local, but flat-sounding: the last resort). Chatterbox and F5 install into their own Python 3.11 venv on first use (via `uv`, ~GBs of torch)
+and run best on a GPU / Apple Silicon. The scene switches its on-screen text on `LANG` from `runtime/kit.js`.
 
 ## Writing a scene
 
@@ -91,6 +151,30 @@ npm run site          # copies videos from out/, makes posters, writes site/data
 npm run site:serve    # http://localhost:5180
 ```
 
+```mermaid
+flowchart LR
+    SC["scenes/**<br/>meta.json, field.json"]:::src --> B
+    OUT[("out/**.mp4<br/>.lang.mp4")]:::out --> B
+    WEB["web/<br/>js, css, index.html"]:::src --> B
+    B["npm run site<br/>src/site/ steps"]:::build
+    B --> V["videos/ + posters/"]:::asset
+    B --> D["data.js<br/>(catalog)"]:::asset
+    B --> P["crawlable HTML per screen<br/>title, canonical, JSON-LD"]:::seo
+    B --> K["sitemap.xml, robots.txt,<br/>llms.txt, llms-full.txt"]:::seo
+    V & D & P & K --> SITE["site/"]:::site --> DEP["npm run deploy<br/>rsync --checksum --delete"]:::deploy
+
+    X["scenes/internal/**"]:::skip -. "git-ignored, never built" .-> B
+
+    classDef src fill:#4dd8ff,stroke:#0a7ea4,color:#06202b
+    classDef out fill:#ffa94d,stroke:#c26a00,color:#2b1600
+    classDef build fill:#b794f6,stroke:#6b46c1,color:#1a0b33
+    classDef asset fill:#7ee787,stroke:#2e8b3d,color:#08240f
+    classDef seo fill:#ffd166,stroke:#b8860b,color:#2b2100
+    classDef site fill:#ff8fa3,stroke:#c0364f,color:#2b0610
+    classDef deploy fill:#69db7c,stroke:#2b8a3e,color:#08240f
+    classDef skip fill:#ced4da,stroke:#868e96,color:#212529,stroke-dasharray:4 3
+```
+
 Language variants (`<name>.<lang>.mp4`) appear automatically: the page gets an EN/VI switcher, and a language only lists videos rendered in it. Translate the text with a `"vi": { "title": ..., "summary": ..., "tags": [...], "series": ... }` block in `meta.json` (and `title`/`blurb` in `field.json`).
 
 The hand-written site source is in `web/` (`js/`, `style.css`, `brand/`, `index.html` template); `npm run site` builds it into `site/`, which is pure output (git-ignored). `site/` is a static site (open `site/index.html` directly, or upload the folder to any static host). Videos are grouped by
@@ -99,12 +183,40 @@ subject, then by series. The text comes from `scenes/<field>/field.json` (subjec
 on the site shows its sub-categories as filter chips (named by `series`). A scene without a rendered video is skipped, and
 one without `meta.json` still appears with a title made from its folder name.
 
-### Link previews
+### SEO and link previews
 
-`web/index.html` has static `og:` / `twitter:` tags using `web/brand/og.png` (regenerate with `npm run og`). Crawlers ignore `#hash`
-routes, so `npm run site` also writes a share page per video, `site/v/<field>/<sub>/<name>/` (and `.../<lang>/`), with that video's
-title, summary and poster as its preview; browsers are redirected into the app. The player's **Copy link** button copies that URL.
-Absolute URLs need your site's public origin: copy `.env.example` to `.env` and set `SITE_URL` (git-ignored). Without it the og tags are omitted and `npm run site` warns. `site/index.html` is generated from `web/index.html`.
+The app is an SPA, but `npm run site` also writes real HTML for every screen, so crawlers and link previews see content:
+
+```mermaid
+flowchart LR
+    U["URL"]:::url --> Q{"which screen?"}:::decide
+    Q --> H["/<br/>home"]:::page
+    Q --> FD["/field/<br/>subject"]:::page
+    Q --> SB["/field/sub/<br/>only if 2+ subs"]:::page
+    Q --> WV["/field/sub/name/<br/>watch page"]:::watch
+    H & FD & SB & WV --> T["own title, description,<br/>canonical, hreflang, og tags"]:::seo
+    WV --> J["VideoObject JSON-LD<br/>+ full transcript"]:::seo
+    T --> SPA["browser loads the SPA<br/>and takes over (history API)"]:::spa
+    L["other languages: /vi/ prefix<br/>no prefix = always English"]:::lang -.-> U
+
+    classDef url fill:#4dd8ff,stroke:#0a7ea4,color:#06202b
+    classDef decide fill:#fff3bf,stroke:#b8860b,color:#2b2100
+    classDef page fill:#b794f6,stroke:#6b46c1,color:#1a0b33
+    classDef watch fill:#ff8fa3,stroke:#c0364f,color:#2b0610
+    classDef seo fill:#ffd166,stroke:#b8860b,color:#2b2100
+    classDef spa fill:#7ee787,stroke:#2e8b3d,color:#08240f
+    classDef lang fill:#ffa94d,stroke:#c26a00,color:#2b1600
+```
+
+Pages come from the `web/index.html` template (`<!--SEO-->`, `<!--H1-->`, `<!--MAIN-->` markers; asset paths stay absolute). Also generated:
+`sitemap.xml` (with hreflang and video entries), `robots.txt`, `llms.txt` and `llms-full.txt` (all transcripts). The player's **Copy link**
+button copies the video's own URL. Absolute URLs need your site's public origin: copy `.env.example` to `.env` and set `SITE_URL`
+(git-ignored); without it canonical, og, JSON-LD and the sitemap are omitted. The link-preview image is `web/brand/og.png` (regenerate with `npm run og`).
+
+### Internal scenes
+
+Scenes under `scenes/internal/<sub>/<name>/` work like any other (`dev`, `narrate`, `render`, `preview`) but are git-ignored and skipped by
+the site build, so they never reach `site/` or the server. Scaffold one with `npm run new -- internal/<sub>/<name> "Title"`.
 
 ## Layout
 
@@ -113,14 +225,16 @@ web/                 site source: js/ (ES modules), style.css, brand/, index.htm
 runtime/scene.js     scene API + live preview UI
 runtime/kit.js       shared palette, fonts, canvas helpers, narrated keyword captions
 src/render.js        Playwright -> ffmpeg renderer
-src/narrate.js       Kokoro text-to-speech
+src/narrate.js       text-to-speech (engines in src/narrate/engines/: chatterbox, f5, kokoro, edge, piper)
+src/narrate/         engines/ (one module per TTS engine), py/ (Chatterbox and F5 scripts), python.js (venvs), wav.js
 src/make.js          narrate + render several scenes
 src/server.js        static server + scene discovery (used by dev and render)
-src/site.js          builds the video library website in site/
+src/site.js          builds the video library website in site/ (steps in src/site/)
 src/preview.js       low-res render + contact sheet for checking a scene
 src/og-image.js      regenerates the site's link-preview image
 scenes/<field>/<sub>/<name>/   index.html, scene.js, narration.json, audio/
 scenes/_template/    starting point for new scenes
+scenes/internal/     internal scenes: git-ignored, not on the site
 out/<field>/<sub>/<name>.mp4
 
 fields / sub-categories so far
@@ -138,6 +252,8 @@ fields / sub-categories so far
                      in-memory-stores: why-redis, redis-vs-valkey
                      containers: why-docker, why-kubernetes
                      kubernetes-internals: control-plane, etcd, scheduler, controllers
+                     ai-coding: context-mode, cut-token-usage, headroom
+  economics          money-and-rates: what-is-money, money-and-gold, exchange-rates, fed-rate-hikes, who-controls-money
 ```
 
 New scene: `npm run new -- <field>/<sub>/<name> "Title"` copies the template (new fields and sub-categories are just new folders). Edit

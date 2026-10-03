@@ -1,0 +1,12 @@
+{
+  "voice": "af_heart",
+  "speed": 0.95,
+  "lines": {
+    "h1": "Even when output must reach the model, most of it is repetition: repeated JSON fields, log noise, boilerplate.",
+    "h2": "Headroom is an open-source layer between your tools and the model. It compresses that content before the model reads it.",
+    "h3": "It is content-aware. JSON, code and logs each get their own compressor, so structure and the key lines survive.",
+    "h4": "And it is reversible. The original is cached locally, so the model can ask for the full detail when it needs it.",
+    "h5": "Run it as a local proxy, a library, or an M C P server. Point Claude Code at it, and your workflow stays the same.",
+    "outro": "Sandbox what you can. Compress what you must."
+  }
+}
