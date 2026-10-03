@@ -6,6 +6,8 @@ Instead of screen-recording, the renderer drives headless Chromium **frame by fr
 for each frame it calls `window.setTime(t)`, takes a screenshot, and pipes it to ffmpeg.
 Output is deterministic, never drops frames, and renders at any resolution/fps.
 
+**Demo:** [knowledge.robustadev.com](https://knowledge.robustadev.com/) is a library site built from videos made with this tool.
+
 ## How it works
 
 ```mermaid
