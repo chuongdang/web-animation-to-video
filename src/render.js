@@ -6,6 +6,7 @@ import path from 'node:path';
 import { chromium } from 'playwright';
 import ffmpegPath from 'ffmpeg-static';
 import { startServer, resolveScene, ROOT } from './server.js';
+import { workerStats } from './render/stats.js';
 
 const { values: opt, positionals } = parseArgs({
   allowPositionals: true,
@@ -124,6 +125,7 @@ try {
   const pending = new Map();
   const maxAhead = workerCount * 3;
   let nextFrame = 0, nextWrite = 0, wake = [];
+  const stats = workerStats(Math.min(workerCount, total));
 
   const flush = async () => {
     while (pending.has(nextWrite)) {
@@ -136,18 +138,20 @@ try {
     const done = nextWrite;
     if (done % 10 === 0 || done === total) {
       const eta = (((Date.now() - started) / done) * (total - done) / 1000).toFixed(0);
-      process.stdout.write(`\r  frame ${done}/${total} (${((done / total) * 100).toFixed(0)}%) eta ${eta}s   `);
+      process.stdout.write(`\r  frame ${done}/${total} (${((done / total) * 100).toFixed(0)}%) eta ${eta}s | ${stats.line()}   `);
     }
   };
   let writer = Promise.resolve();
 
-  const work = async (page) => {
+  const work = async (page, w) => {
     while (nextFrame < total) {
       while (nextFrame - nextWrite >= maxAhead) await new Promise((r) => wake.push(r));
       const i = nextFrame++;
       if (i >= total) break;
+      const t0 = Date.now();
       await page.evaluate((t) => window.setTime(t), i / fps);
       pending.set(i, await page.screenshot({ type: 'jpeg', quality: 95 }));
+      stats.record(w, Date.now() - t0);
       writer = writer.then(flush);
       await writer;
     }
@@ -158,10 +162,10 @@ try {
     const ctx = w === 0 ? context : await browser.newContext({ viewport: { width: meta.width, height: meta.height }, deviceScaleFactor: scale });
     pages.push(await openScene(ctx));
   }
-  await Promise.all(pages.map(work));
+  await Promise.all(pages.map((page, w) => work(page, w)));
   ff.stdin.end();
   await ffDone;
-  console.log(`\nDone -> ${path.relative(process.cwd(), outFile)}`);
+  console.log(`\n${stats.summary()}\nDone -> ${path.relative(process.cwd(), outFile)}`);
 } finally {
   await browser.close();
   await server.close();

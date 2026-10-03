@@ -3,7 +3,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+// VC_ROOT points every tool at another project tree (the tests use a throwaway fixture); unset = this repo
+export const ROOT = process.env.VC_ROOT ? path.resolve(process.env.VC_ROOT) : path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
 const MIME = {
   '.html': 'text/html; charset=utf-8',
